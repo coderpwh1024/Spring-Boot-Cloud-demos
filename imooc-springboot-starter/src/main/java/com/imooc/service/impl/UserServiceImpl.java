@@ -1,6 +1,8 @@
 package com.imooc.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.imooc.mapper.SysUserMapper;
+import com.imooc.mapper.SysUserMapperCustom;
 import com.imooc.pojo.SysUser;
 import com.imooc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,10 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private SysUserMapper userMapper;
-	
+
+	@Autowired
+	private SysUserMapperCustom userMapperCustom;
+
 
 	
 	@Override
@@ -87,19 +92,46 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.SUPPORTS)
 	public List<SysUser> queryUserListPaged(SysUser user, Integer page, Integer pageSize) {
-		return null;
+		// 开始分页
+		PageHelper.startPage(page, pageSize);
+
+		Example example = new Example(SysUser.class);
+		Example.Criteria criteria = example.createCriteria();
+
+		if (!StringUtils.isEmptyOrWhitespace(user.getNickname())) {
+			criteria.andLike("nickname", "%" + user.getNickname() + "%");
+		}
+		example.orderBy("registTime").desc();
+		List<SysUser> userList = userMapper.selectByExample(example);
+
+		return userList;
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.SUPPORTS)
 	public SysUser queryUserByIdCustom(String userId) {
+
+		List<SysUser> userList = userMapperCustom.queryUserSimplyInfoById(userId);
+
+		if (userList != null && !userList.isEmpty()) {
+			return (SysUser)userList.get(0);
+		}
+
 		return null;
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
 	public void saveUserTransactional(SysUser user) {
 
-	}
+		userMapper.insert(user);
 
+		int a = 1 / 0;
+
+		user.setIsDelete(1);
+		userMapper.updateByPrimaryKeySelective(user);
+	}
 
 }
