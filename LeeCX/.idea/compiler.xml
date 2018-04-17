@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="leecx-common" />
+        <module name="leecx-mng-component" />
+        <module name="leecx-mng-mapper" />
+        <module name="leecx-mng-pojo" />
+        <module name="leecx-mng-service" />
+        <module name="leecx-mng-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="leecx-common" target="1.8" />
+      <module name="leecx-mng" target="1.8" />
+      <module name="leecx-mng-component" target="1.8" />
+      <module name="leecx-mng-mapper" target="1.8" />
+      <module name="leecx-mng-pojo" target="1.8" />
+      <module name="leecx-mng-service" target="1.8" />
+      <module name="leecx-mng-web" target="1.8" />
+      <module name="leecx-root" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

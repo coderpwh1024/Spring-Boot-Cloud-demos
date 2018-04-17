@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/LeeCX.iml" filepath="$PROJECT_DIR$/.idea/LeeCX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-common/leecx-common.iml" filepath="$PROJECT_DIR$/leecx-common/leecx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng-component/leecx-mng-component.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng-component/leecx-mng-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng-mapper/leecx-mng-mapper.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng-mapper/leecx-mng-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng-pojo/leecx-mng-pojo.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng-pojo/leecx-mng-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng-service/leecx-mng-service.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng-service/leecx-mng-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-mng/leecx-mng-web/leecx-mng-web.iml" filepath="$PROJECT_DIR$/leecx-mng/leecx-mng-web/leecx-mng-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leecx-root/leecx-root.iml" filepath="$PROJECT_DIR$/leecx-root/leecx-root.iml" />
+    </modules>
+  </component>
+</project>
