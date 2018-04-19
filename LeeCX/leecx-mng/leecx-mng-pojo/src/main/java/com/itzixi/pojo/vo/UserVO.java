@@ -14,12 +14,8 @@ public class UserVO {
     private Integer age;
 
     private Integer sex;
-    
-    private String sexValue;
 
     private Integer job;
-    
-    private String jobValue;
 
     private String faceImage;
 
@@ -176,21 +172,4 @@ public class UserVO {
     public void setRegistTime(Date registTime) {
         this.registTime = registTime;
     }
-
-	public String getSexValue() {
-		return sexValue;
-	}
-
-	public void setSexValue(String sexValue) {
-		this.sexValue = sexValue;
-	}
-
-	public String getJobValue() {
-		return jobValue;
-	}
-
-	public void setJobValue(String jobValue) {
-		this.jobValue = jobValue;
-	}
-
 }
