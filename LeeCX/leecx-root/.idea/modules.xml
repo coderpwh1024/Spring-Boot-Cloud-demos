@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../leecx-common/leecx-common.iml" filepath="$PROJECT_DIR$/../leecx-common/leecx-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/../leecx-mng/leecx-mng.iml" filepath="$PROJECT_DIR$/../leecx-mng/leecx-mng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../leecx-mng/leecx-mng-component/leecx-mng-component.iml" filepath="$PROJECT_DIR$/../leecx-mng/leecx-mng-component/leecx-mng-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/../leecx-mng/leecx-mng-mapper/leecx-mng-mapper.iml" filepath="$PROJECT_DIR$/../leecx-mng/leecx-mng-mapper/leecx-mng-mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/../leecx-mng/leecx-mng-pojo/leecx-mng-pojo.iml" filepath="$PROJECT_DIR$/../leecx-mng/leecx-mng-pojo/leecx-mng-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../leecx-mng/leecx-mng-service/leecx-mng-service.iml" filepath="$PROJECT_DIR$/../leecx-mng/leecx-mng-service/leecx-mng-service.iml" />

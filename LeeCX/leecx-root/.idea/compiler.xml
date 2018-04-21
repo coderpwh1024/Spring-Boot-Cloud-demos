@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leecx-common" />
+        <module name="leecx-mng-component" />
         <module name="leecx-mng-mapper" />
         <module name="leecx-mng-pojo" />
         <module name="leecx-mng-service" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="leecx-common" target="1.8" />
       <module name="leecx-mng" target="1.8" />
+      <module name="leecx-mng-component" target="1.8" />
       <module name="leecx-mng-mapper" target="1.8" />
       <module name="leecx-mng-pojo" target="1.8" />
       <module name="leecx-mng-service" target="1.8" />
