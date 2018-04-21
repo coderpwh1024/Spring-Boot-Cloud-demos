@@ -1,32 +1,78 @@
 package com.itzixi.service.impl;
 
-import com.itzixi.mapper.DemoItemMapper;
-import com.itzixi.pojo.DemoItem;
-import com.itzixi.service.DemoItemService;
+import java.util.List;
+
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-/**
- * Created by 彭文浩 on 2018/4/19.
- */
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.itzixi.common.pojo.JqGridResult;
+import com.itzixi.mapper.DemoItemMapper;
+import com.itzixi.pojo.DemoItem;
+import com.itzixi.pojo.DemoItemExample;
+import com.itzixi.service.DemoItemService;
+
+@Service
 public class DemoItemServiceImpl implements DemoItemService {
 
-    @Autowired
-    private DemoItemMapper demoItemMapper;
+	@Autowired
+	private DemoItemMapper demoItemMapper;
+	
+	@Autowired
+	private Sid sid;
+	
+	@Override
+	public void saveItem(DemoItem item) {
+		
+		String itemId = sid.nextShort();
 
-    @Autowired
-    private Sid sid;
+		item.setId(itemId);
+		item.setAmount(item.getAmount() * 100);
+		
+		demoItemMapper.insert(item);
+	}
 
-    @Override
-    public void saveItem(DemoItem item) {
+	@Override
+	public JqGridResult queryItemList(Integer page, Integer pageSize) {
+		
+		PageHelper.startPage(page, pageSize);
+		
+		DemoItemExample demoItemExample = new DemoItemExample();
+//		Criteria demoItemCriteria = demoItemExample.createCriteria();
+		
+		List<DemoItem> result = demoItemMapper.selectByExample(demoItemExample);
+		
+		PageInfo<DemoItem> pageList = new PageInfo<DemoItem>(result);
+		
+		JqGridResult grid = new JqGridResult();
+		grid.setTotal(pageList.getPages());
+		grid.setRows(result);
+		grid.setPage(pageList.getPageNum());
+		grid.setRecords(pageList.getTotal());
+		
+		return grid;
+	}
 
+	@Override
+	public DemoItem queryItemById(String itemId) {
+		
+		DemoItem item = demoItemMapper.selectByPrimaryKey(itemId);
+		
+		return item;
+	}
 
-        String itemId = sid.nextShort();
+	@Override
+	public void updateItem(DemoItem item) {
+		
+		demoItemMapper.updateByPrimaryKeySelective(item);
+	}
 
-        item.setId(itemId);
-        item.setAmount(item.getAmount() * 100);
-
-        demoItemMapper.insert(item);
-    }
+	@Override
+	public void deleteItem(String itemId) {
+		demoItemMapper.deleteByPrimaryKey(itemId);
+	}
+	
 
 }

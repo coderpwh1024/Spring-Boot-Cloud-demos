@@ -1,17 +1,23 @@
 package com.itzixi.service;
 
+import com.itzixi.common.pojo.JqGridResult;
 import com.itzixi.pojo.DemoItem;
 
-/**
- * Created by 彭文浩 on 2018/4/19.
- */
 
 public interface DemoItemService {
 
-    /***
-     * 添加商品
-      * @param demoItem
-     */
-    public void saveItem(DemoItem demoItem);
 
+    public void saveItem(DemoItem item);
+
+
+    public JqGridResult queryItemList(Integer page, Integer pageSize);
+
+
+    public DemoItem queryItemById(String itemId);
+
+
+    public void updateItem(DemoItem item);
+
+
+    public void deleteItem(String itemId);
 }
