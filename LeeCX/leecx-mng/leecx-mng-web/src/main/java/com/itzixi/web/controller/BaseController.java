@@ -1,17 +1,17 @@
 package com.itzixi.web.controller;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.itzixi.components.utils.RedisOperator;
+import com.itzixi.pojo.ActiveUser;
 import org.apache.shiro.SecurityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 
-import com.itzixi.pojo.ActiveUser;
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 
@@ -26,18 +26,21 @@ import com.itzixi.pojo.ActiveUser;
  * @version V1.0
  */
 public class BaseController {
-	
+
 //	@Autowired
 //	public JedisClient jedis;
-	
-	@Value("${REDIS_SESSION_KEY}")
-	public String REDIS_SESSION_KEY;
-	
-	@Value("${SESSION_EXPIRE}")
-	public Integer SESSION_EXPIRE;
-	
-	@Value("${ITZIXI_TOKEN}")
-	public String ITZIXI_TOKEN;
+
+	@Autowired
+	public RedisOperator jedis;
+
+//	@Value("${REDIS_SESSION_KEY}")
+//	public String REDIS_SESSION_KEY;
+//
+//	@Value("${SESSION_EXPIRE}")
+//	public Integer SESSION_EXPIRE;
+//
+//	@Value("${ITZIXI_TOKEN}")
+//	public String ITZIXI_TOKEN;
 	
 	/**
 	 * 默认分页行数

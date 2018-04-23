@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.itzixi</groupId>
@@ -7,9 +7,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>leecx-mng</artifactId>
-	
+
 	<packaging>pom</packaging>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.itzixi</groupId>
@@ -17,9 +17,9 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
-		<!-- 
+		<!--
 			配置tomcat插件: 运行war工程必须在它的聚合工程内配置tomcat
 			maven build命令: clean tomcat7:run
 			*如果不写tomcat7, 那么默认使用tomcat6运行
@@ -36,7 +36,7 @@
 					<uriEncoding>UTF-8</uriEncoding>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<configuration>
@@ -51,14 +51,14 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		
+
 	</build>
-	
+
 	<modules>
 		<module>leecx-mng-pojo</module>
 		<module>leecx-mng-mapper</module>
 		<module>leecx-mng-service</module>
 		<module>leecx-mng-web</module>
-        <module>leecx-mng-component</module>
-    </modules>
+		<module>leecx-mng-component</module>
+	</modules>
 </project>
