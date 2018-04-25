@@ -12,12 +12,14 @@ import com.itzixi.pojo.DataDict;
 import com.itzixi.pojo.DataDictExample;
 import com.itzixi.service.DataDictService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by 彭文浩 on 2018/4/21.
  */
+@Service
 public class DataDictServiceImpl implements DataDictService {
     @Autowired
     private DataDictMapper dataDictMapper;

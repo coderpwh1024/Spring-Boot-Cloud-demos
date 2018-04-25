@@ -30,7 +30,7 @@
 
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate" p:connectionFactory-ref="jedisConnectionFactory">
     <!-- 若使用redis作为shiro的缓存，则开放此处，需要使用jdk序列化 -->
-      <!--  <property name="keySerializer">
+        <property name="keySerializer">
             <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
         </property>
         <property name="valueSerializer">
@@ -41,10 +41,10 @@
         </property>
         <property name="hashValueSerializer">
             <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
-        </property>-->
+        </property>
         
         <!-- 若不使用redis作为shiro的缓存，则开放此处，使用string序列化即可，jdk序列化在redis中的key值 不好看 -->
-         <property name="keySerializer">
+       <!--  <property name="keySerializer">
  	        <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
  	    </property>
  	    <property name="valueSerializer">
@@ -55,7 +55,7 @@
  	    </property>
  	    <property name="hashValueSerializer">
  	        <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
- 	    </property>
+ 	    </property>-->
     </bean>
 
     <!--spring cache-->
