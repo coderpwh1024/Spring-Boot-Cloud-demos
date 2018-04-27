@@ -109,7 +109,31 @@
 	                </div>
 	            </div>
 	            <div class="portlet-body ">
-	                <div class="row ">
+	            	<div class="row ">
+	                    <div class="col-md-4 ">
+	                        <img src="<%=request.getContextPath() %>/static/pages/img/course/springboot.jpg" width="233px" class="img-responsive"/>
+	                    </div>
+	                    <div class="col-md-8 " >
+	                    	<a href="http://www.itzixi.com/course/detail.shtml?courseId=1711089W6RG47GHH" target="_blank">《Sping Boot 极速入门到整合系列视频》</a>
+	                    </div>
+	                </div>
+	                <div class="row " style="margin-top: 10px;">
+	                    <div class="col-md-4 ">
+	                        <img src="<%=request.getContextPath() %>/static/pages/img/course/shiro.jpg" width="233px" class="img-responsive"/>
+	                    </div>
+	                    <div class="col-md-8 " >
+	                    	<a href="http://www.itzixi.com/course/detail.shtml?courseId=170925BH9R40SAY8" target="_blank">《Shiro权限管理在J2EE企业级开发中的应用与实战》</a>
+	                    </div>
+	                </div>
+	                <div class="row " style="margin-top: 10px;">
+	                    <div class="col-md-4 ">
+	                        <img src="<%=request.getContextPath() %>/static/pages/img/course/dd.jpg" width="233px" class="img-responsive"/>
+	                    </div>
+	                    <div class="col-md-8 " >
+	                    	<a href="http://www.itzixi.com/course/detail.shtml?courseId=17092078Y3009WX4" target="_blank">《使用新版支付宝接口实现第三方网关支付》</a>
+	                    </div>
+	                </div>
+	                <div class="row " style="margin-top: 10px;">
 	                    <div class="col-md-4 ">
 	                        <img src="<%=request.getContextPath() %>/static/pages/img/course/alipay.jpg" width="233px" class="img-responsive"/>
 	                    </div>
@@ -135,18 +159,18 @@
 	                </div>
 	                <div class="row" style="margin-top: 10px;">
 	                    <div class="col-md-4">
-	                        	录制中...
+	                        	<img src="<%=request.getContextPath() %>/static/pages/img/course/leecx.jpg" width="233px" class="img-responsive"/>
 	                    </div>
 	                    <div class="col-md-8">
-	                    	《shiro - 从入门到精通，结合实战》
+	                    	<a href="http://www.itzixi.com/course/detail.shtml?courseId=17091175XBRXMS14" target="_blank">《LeeCX 开源后台管理系统 git+maven+ssm (不断更新)》</a>
 	                    </div>
 	                </div>
 	                <div class="row" style="margin-top: 10px;">
 	                    <div class="col-md-4">
-	                        	录制中...
+	                        	<img src="<%=request.getContextPath() %>/static/pages/img/course/jqgrid.jpg" width="233px" class="img-responsive"/>
 	                    </div>
 	                    <div class="col-md-8">
-	                    	《springboot - 从入门到精通，结合各类技术的整合与实战》
+	                    	<a href="http://www.itzixi.com/course/detail.shtml?courseId=1709106XFPFRT4SW" target="_blank">《mybatis-pagehelper+jqgrid 实现无刷新分页》</a>
 	                    </div>
 	                </div>
 	            </div>

@@ -2,9 +2,8 @@ package com.itzixi.mapper;
 
 import com.itzixi.pojo.DataDict;
 import com.itzixi.pojo.DataDictExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface DataDictMapper {
     int countByExample(DataDictExample example);

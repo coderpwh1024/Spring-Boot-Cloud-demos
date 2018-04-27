@@ -2,9 +2,8 @@ package com.itzixi.mapper;
 
 import com.itzixi.pojo.DemoItem;
 import com.itzixi.pojo.DemoItemExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface DemoItemMapper {
     int countByExample(DemoItemExample example);

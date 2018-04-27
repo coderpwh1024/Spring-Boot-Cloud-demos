@@ -29,7 +29,7 @@
 					</a>
                	</li>
                	
-              		<!-- 用户个人信息 start -->
+              	<!-- 用户个人信息 start -->
 				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-user"></i>
@@ -49,17 +49,16 @@
                         </li>
                     </ul>
                	</li>
-
-
-                <!-- 数据字典管理 start -->
-                <li class="nav-item ">
+               	
+               	<!-- 数据字典管理 start -->
+				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-notebook"></i>
                         <span class="title">数据字典管理</span>
-                        <span class="arrow"></span>
+						<span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class="nav-item ">
+						<li class="nav-item ">
                             <a href="<%=request.getContextPath() %>/dataDict/showCreateDataDictPage.action" class="ajaxify nav-link ">
                                 <span class="title">新建字典</span>
                             </a>
@@ -70,17 +69,17 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-
-                <!-- 商品信息 start -->
-                <li class="nav-item ">
+               	</li>
+               	
+               	<!-- 商品信息 start -->
+				<li class="nav-item ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-basket-loaded"></i>
                         <span class="title">Demo - 商品信息</span>
-                        <span class="arrow"></span>
+						<span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class="nav-item ">
+						<li class="nav-item ">
                             <a href="<%=request.getContextPath() %>/demoItem/showCreateItemPage.action" class="ajaxify nav-link ">
                                 <span class="title">创建商品</span>
                             </a>
@@ -91,9 +90,29 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-
-
+               	</li>
+               	
+               	<!-- shiro 测试 start -->
+				<li class="nav-item ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-basket-loaded"></i>
+                        <span class="title">shiro 测试</span>
+						<span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+						<li class="nav-item ">
+                            <a href="<%=request.getContextPath() %>/shiroTest/shiroPage.action" class="ajaxify nav-link ">
+                                <span class="title">shiro 页面</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="<%=request.getContextPath() %>/shiroTest/clearCache.action" class="ajaxify nav-link ">
+                                <span class="title">清理授权缓存</span>
+                            </a>
+                        </li>
+                    </ul>
+               	</li>
+				
             </ul>
             <!-- END SIDEBAR MENU -->
         </div>

@@ -1,9 +1,11 @@
 package com.itzixi.web.controller;
 
-import java.util.Date;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.itzixi.common.enums.YesOrNo;
+import com.itzixi.common.pojo.JqGridResult;
+import com.itzixi.common.utils.LeeJSONResult;
+import com.itzixi.common.utils.NumberUtil;
+import com.itzixi.pojo.SysUser;
+import com.itzixi.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,25 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.itzixi.common.enums.YesOrNo;
-import com.itzixi.common.pojo.JqGridResult;
-import com.itzixi.common.utils.LeeJSONResult;
-import com.itzixi.common.utils.NumberUtil;
-import com.itzixi.pojo.SysUser;
-import com.itzixi.service.UserService;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
-/**
- * 
- * @Title: UserController.java
- * @Package com.itzixi.web.controller
- * @Description: 用户 controller
- * Copyright: Copyright (c) 2016
- * Company:FURUIBOKE.SCIENCE.AND.TECHNOLOGY
- * 
- * @author leechenxiang
- * @date 2017年9月5日 下午2:10:15
- * @version V1.0
- */
+
 @Controller
 @RequestMapping("/user")
 public class UserController extends BaseController {
@@ -101,6 +88,7 @@ public class UserController extends BaseController {
 	 */
 	@RequestMapping("/showUserInfoListPage")
 	public String showUserInfoListPage(HttpServletRequest request){
+
 		
 		return "user/userInfoList";
 	}

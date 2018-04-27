@@ -5,17 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-/**
- * 
- * @Title: SpringUtils.java
- * @Package com.agood.bejavagod.utils
- * @Description: Spring上下文操作类
- * Copyright: Copyright (c) 2016
- * Company:Nathan.Lee.Salvatore
- * 
- * @author leechenxiang
- * @date 2016年11月29日 下午6:32:42
- * @version V1.0
+/***
+ * Spring上下文操作
  */
 @Component
 public class SpringUtils implements ApplicationContextAware {
