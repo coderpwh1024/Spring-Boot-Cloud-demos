@@ -37,6 +37,8 @@ public class SysUser {
 
     private Date registTime;
 
+    private String images;
+
     public String getId() {
         return id;
     }
@@ -171,5 +173,13 @@ public class SysUser {
 
     public void setRegistTime(Date registTime) {
         this.registTime = registTime;
+    }
+
+    public String getImages() {
+        return images;
+    }
+
+    public void setImages(String images) {
+        this.images = images == null ? null : images.trim();
     }
 }

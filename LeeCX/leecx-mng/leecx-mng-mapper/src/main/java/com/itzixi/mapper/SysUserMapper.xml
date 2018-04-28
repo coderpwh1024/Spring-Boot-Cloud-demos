@@ -19,6 +19,7 @@
     <result column="last_login_time" property="lastLoginTime" jdbcType="TIMESTAMP" />
     <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
     <result column="regist_time" property="registTime" jdbcType="TIMESTAMP" />
+    <result column="images" property="images" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -80,7 +81,7 @@
   </sql>
   <sql id="Base_Column_List" >
     id, username, password, nickname, age, sex, job, face_image, province, city, district, 
-    address, auth_salt, last_login_ip, last_login_time, is_delete, regist_time
+    address, auth_salt, last_login_ip, last_login_time, is_delete, regist_time, images
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.itzixi.pojo.SysUserExample" >
     select
@@ -118,13 +119,15 @@
       job, face_image, province, 
       city, district, address, 
       auth_salt, last_login_ip, last_login_time, 
-      is_delete, regist_time)
+      is_delete, regist_time, images
+      )
     values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{nickname,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{sex,jdbcType=INTEGER}, 
       #{job,jdbcType=INTEGER}, #{faceImage,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
       #{city,jdbcType=VARCHAR}, #{district,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
       #{authSalt,jdbcType=VARCHAR}, #{lastLoginIp,jdbcType=VARCHAR}, #{lastLoginTime,jdbcType=TIMESTAMP}, 
-      #{isDelete,jdbcType=INTEGER}, #{registTime,jdbcType=TIMESTAMP})
+      #{isDelete,jdbcType=INTEGER}, #{registTime,jdbcType=TIMESTAMP}, #{images,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.itzixi.pojo.SysUser" >
     insert into sys_user
@@ -180,6 +183,9 @@
       <if test="registTime != null" >
         regist_time,
       </if>
+      <if test="images != null" >
+        images,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -232,6 +238,9 @@
       </if>
       <if test="registTime != null" >
         #{registTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="images != null" >
+        #{images,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -295,6 +304,9 @@
       <if test="record.registTime != null" >
         regist_time = #{record.registTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="record.images != null" >
+        images = #{record.images,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -318,7 +330,8 @@
       last_login_ip = #{record.lastLoginIp,jdbcType=VARCHAR},
       last_login_time = #{record.lastLoginTime,jdbcType=TIMESTAMP},
       is_delete = #{record.isDelete,jdbcType=INTEGER},
-      regist_time = #{record.registTime,jdbcType=TIMESTAMP}
+      regist_time = #{record.registTime,jdbcType=TIMESTAMP},
+      images = #{record.images,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -374,6 +387,9 @@
       <if test="registTime != null" >
         regist_time = #{registTime,jdbcType=TIMESTAMP},
       </if>
+      <if test="images != null" >
+        images = #{images,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
@@ -394,7 +410,8 @@
       last_login_ip = #{lastLoginIp,jdbcType=VARCHAR},
       last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
       is_delete = #{isDelete,jdbcType=INTEGER},
-      regist_time = #{registTime,jdbcType=TIMESTAMP}
+      regist_time = #{registTime,jdbcType=TIMESTAMP},
+      images = #{images,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
 </mapper>

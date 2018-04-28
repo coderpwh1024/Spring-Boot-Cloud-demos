@@ -117,5 +117,13 @@ public class DataDictController extends BaseController {
         return LeeJSONResult.ok();
     }
 
+    @RequestMapping("/queryDataDictValue")
+    @ResponseBody
+    public LeeJSONResult queryDataDictValue(String typeCode, String ddkey){
+
+        String ddvalue = dataDictService.queryDataDictValueByCodeKey(typeCode, ddkey);
+
+        return LeeJSONResult.ok(ddvalue);
+    }
 
 }

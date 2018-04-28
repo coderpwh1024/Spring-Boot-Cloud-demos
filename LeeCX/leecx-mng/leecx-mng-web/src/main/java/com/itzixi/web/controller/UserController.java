@@ -42,6 +42,7 @@ public class UserController extends BaseController {
 	public String showCreateUserPage(String userId, HttpServletRequest request){
 		
 		log.debug("显示用户个人信息页面");
+
 		
 		return "user/createUser";
 	}
@@ -111,7 +112,7 @@ public class UserController extends BaseController {
 			page = 1;
 		}
 		
-		JqGridResult result = userService.queryUserList(null, page, pageSize);
+		JqGridResult result = userService.queryUserList(user, page, pageSize);
 		
 		return result;
 	}
