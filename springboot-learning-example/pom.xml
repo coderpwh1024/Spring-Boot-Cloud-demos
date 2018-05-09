@@ -38,15 +38,15 @@
 		<module>springboot-mybatis</module>
 
 		<!-- Spring Boot 整合 Mybatis Annotation 注解案例 -->
-		<!--<module>springboot-mybatis-annotation</module>-->
+		<module>springboot-mybatis-annotation</module>
 		<!-- Spring Boot 整合 Mybatis 实现 Druid 多数据源配置 -->
-	<!--	<module>springboot-mybatis-mutil-datasource</module>-->
+	<module>springboot-mybatis-mutil-datasource</module>
 
 		<!-- 基础 – 数据缓存篇 -->
 		<!-- Spring Boot 整合 Redis 实现缓存 -->
-	<!--	<module>springboot-mybatis-redis</module>-->
+	<module>springboot-mybatis-redis</module>
 		<!-- Spring Boot 注解实现整合 Redis 实现缓存 -->
-		<!--<module>springboot-mybatis-redis-annotation</module>-->
+		<module>springboot-mybatis-redis-annotation</module>
 
 		<!-- 基础 – 应用篇 -->
 		<!-- Spring Boot Actuator 监控
@@ -54,8 +54,8 @@
 
 		<!-- 其他篇 -->
 		<!-- Spring Boot 整合 Dubbo/ZooKeeper 详解 SOA 案例 -->
-		<!--<module>springboot-dubbo-server</module>
-		<module>springboot-dubbo-client</module>-->
+		<module>springboot-dubbo-server</module>
+		<module>springboot-dubbo-client</module>
 		<!-- Spring Boot 整合 Elasticsearch -->
 		<!--<module>springboot-elasticsearch</module>-->
 
