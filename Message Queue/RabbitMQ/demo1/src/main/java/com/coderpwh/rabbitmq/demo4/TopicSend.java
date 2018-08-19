@@ -21,6 +21,7 @@ public class TopicSend {
             connection = factory.newConnection();
             factory.setHost("localhost");
             connection = factory.newConnection();
+            channel=connection.createChannel();
 
             // 声明交换机
             channel.exchangeDeclare(EXCHANGE_NAME,"topic");
