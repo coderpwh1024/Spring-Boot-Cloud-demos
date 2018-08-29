@@ -20,7 +20,7 @@ public class ServiceZipkinApplication {
         SpringApplication.run(ServiceZipkinApplication.class, args);
     }
 
-    private static final Logger LOG = Logger.getLogger(ServiceHiApplication.class.getName());
+    private static final Logger LOG = Logger.getLogger(ServiceZipkinApplication.class.getName());
 
     @Autowired
     private RestTemplate restTemplate;
