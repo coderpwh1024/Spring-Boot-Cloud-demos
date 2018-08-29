@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sc-f-chapter9" />
         <module name="service-zipkin" />
+        <module name="service2-zipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sc-f-chapter9" target="1.8" />
       <module name="service-zipkin" target="1.8" />
+      <module name="service2-zipkin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

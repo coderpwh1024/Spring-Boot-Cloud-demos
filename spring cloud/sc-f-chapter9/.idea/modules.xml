@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sc-f-chapter9.iml" filepath="$PROJECT_DIR$/sc-f-chapter9.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-hi/service-zipkin.iml" filepath="$PROJECT_DIR$/service-hi/service-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-miya/service2-zipkin.iml" filepath="$PROJECT_DIR$/service-miya/service2-zipkin.iml" />
     </modules>
   </component>
 </project>
