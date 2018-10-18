@@ -1,6 +1,7 @@
-package com.coderpwh.concurrency;
+package com.coderpwh.concurrency.example.count;
 
 import com.coderpwh.concurrency.annoations.NotThreadSafe;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 
 import java.util.concurrent.CountDownLatch;
@@ -8,9 +9,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
-//@Slf4j
+@Slf4j
 @NotThreadSafe
-class ConcurrencyTest {
+public class CountExample1 {
 
     // 请求总数
     public static int clientTotal = 5000;

@@ -1,16 +1,19 @@
-package com.coderpwh.concurrency;
+package com.coderpwh.concurrency.example.atomic;
 
-import com.coderpwh.concurrency.annoations.NotThreadSafe;
+import com.coderpwh.concurrency.annoations.ThreadSafe;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.LongAdder;
 
-//@Slf4j
-@NotThreadSafe
-class ConcurrencyTest {
+@Slf4j
+@ThreadSafe
+public class AtomicExample3 {
 
     // 请求总数
     public static int clientTotal = 5000;
@@ -18,7 +21,7 @@ class ConcurrencyTest {
     // 同时并发执行的线程数
     public static int threadTotal = 200;
 
-    public static int count = 0;
+    public static LongAdder count  =  new LongAdder();
 
     public static Logger log = org.slf4j.LoggerFactory.getLogger("aa");
 
@@ -64,7 +67,9 @@ class ConcurrencyTest {
     }
 
     public static void add() {
-        count++;
+//        count.incrementAndGet();
+           count.increment();
+
     }
 
 
