@@ -2,10 +2,11 @@ package com.coderpwh.concurrency.example.syncContainer;
 
 import com.coderpwh.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
 
+import java.util.Collections;
 import java.util.List;
-import java.util.Vector;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -13,7 +14,7 @@ import java.util.concurrent.Semaphore;
 
 @Slf4j
 @ThreadSafe
-public class VectorExample1 {
+public class CollectionsExample1 {
 
 
     // 请求总数
@@ -22,9 +23,8 @@ public class VectorExample1 {
     // 同时并发执行的线程数
     public static int threadTotal = 200;
     public static Logger log = org.slf4j.LoggerFactory.getLogger("aa");
-//    private static StringBuilder sb = new StringBuilder();
 
-    private static List<Integer> list = new Vector<>();
+    private static List<Integer> list = Collections.synchronizedList(Lists.newArrayList());
 
 
     public static void main(String[] args) throws Exception {
@@ -32,7 +32,7 @@ public class VectorExample1 {
         final Semaphore semaphore = new Semaphore(threadTotal);
         CountDownLatch countDownLatch = new CountDownLatch(clientTotal);
         for (int i = 0; i < clientTotal; i++) {
-            final int count = 1;
+            final int count = i;
             // jdk1.8 lambda
             executorService.execute(() -> {
                 try {
