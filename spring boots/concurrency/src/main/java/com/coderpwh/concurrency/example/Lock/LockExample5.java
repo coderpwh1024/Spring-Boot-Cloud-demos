@@ -1,5 +1,6 @@
 package com.coderpwh.concurrency.example.Lock;
 
+import com.coderpwh.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 
@@ -16,6 +17,7 @@ import java.util.concurrent.locks.StampedLock;
  */
 
 @Slf4j
+@ThreadSafe
 public class LockExample5 {
 
 
