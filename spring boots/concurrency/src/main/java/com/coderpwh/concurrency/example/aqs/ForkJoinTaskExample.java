@@ -1,5 +1,6 @@
 package com.coderpwh.concurrency.example.aqs;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 
 import java.util.concurrent.ForkJoinPool;
@@ -7,6 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
 
 
+@Slf4j
 public class ForkJoinTaskExample extends RecursiveTask<Integer> {
 
     public static Logger log = org.slf4j.LoggerFactory.getLogger("aa");
@@ -63,6 +65,7 @@ public class ForkJoinTaskExample extends RecursiveTask<Integer> {
 
         try {
             log.info("result:{}", result.get());
+
         } catch (Exception e) {
             log.error("exception", e);
         }
