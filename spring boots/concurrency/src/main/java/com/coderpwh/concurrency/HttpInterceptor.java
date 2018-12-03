@@ -3,7 +3,6 @@ package com.coderpwh.concurrency;
 import com.coderpwh.concurrency.example.threadLocal.RequestHolder;
 import org.slf4j.Logger;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
