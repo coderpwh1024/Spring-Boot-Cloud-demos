@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 配置文件路径 -->
+    <properties resource="application.properties" />
+
+    <context id="iokindle" targetRuntime="MyBatis3">
+        <!-- 生成的Java文件的编码-->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 格式化java代码-->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+        <!-- 格式化XML代码-->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+
+        <!-- <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin> -->
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <!-- <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@10.100.1.20:1521:db1"
+            userId="rams_test" password="bangsun"> </jdbcConnection> -->
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}" connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}" password="${spring.datasource.password}">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.why.MyProject.entity"
+                            targetProject="src/main/java">
+            <property name="constructorBased" value="true" />
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.why.MyProject.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+
+        <!--<table tableName="sys_user" domainObjectName="SysUser" alias="su"></table>
+        <table tableName="sys_department" domainObjectName="SysDepartment" alias="sd"></table>
+        <table tableName="sys_role" domainObjectName="SysRole" alias="sr"></table>
+        <table tableName="task_projects" domainObjectName="TaskProjects" alias="tp"></table>
+        <table tableName="task_step" domainObjectName="TaskStep" alias="te"></table>
+        <table tableName="task_type" domainObjectName="TaskType" alias="tt"></table>-->
+        <!--<table tableName="task_error" domainObjectName="TaskError" alias="tr"></table>-->
+        <!--<table tableName="task_status" domainObjectName="TaskStatus" alias="ts"></table>-->
+        <!--<table tableName="task_data" domainObjectName="TaskData" alias="td"></table>-->
+        <!--<table tableName="task" domainObjectName="Task" alias="t"></table>-->
+        <!--<table tableName="task_a_workorder" domainObjectName="TaskAWorkOrder" alias="t"></table>-->
+        <table tableName="user" domainObjectName="User" alias="t"></table>
+
+        <!--<table tableName="task_a_workorder" domainObjectName="TaskAWorkOrder" alias="t"></table>-->
+        <!--<table tableName="task_sub_data" domainObjectName="TaskSubData" alias="tsd"></table>-->
+        <!-- <table tableName="task_b_workorder" domainObjectName="TaskBWorkOrder" alias="tbw"></table>-->
+    </context>
+</generatorConfiguration>

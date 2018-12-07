@@ -1,0 +1,560 @@
+2018-06-07 22:54:26,153 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 13664 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 22:54:26,166 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 22:54:26,296 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12d0d24: startup date [Thu Jun 07 22:54:26 CST 2018]; root of context hierarchy
+2018-06-07 22:54:28,631 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 22:54:29,176 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 22:54:29,499 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c9a8dc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 22:54:30,266 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 22:54:30,304 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:54:30,321 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 22:54:30,322 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 22:54:30,341 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 22:54:30,714 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 22:54:30,715 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 4429 ms
+2018-06-07 22:54:31,044 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 22:54:31,047 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 22:54:31,048 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 22:54:31,048 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 22:54:31,048 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 22:54:32,625 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12d0d24: startup date [Thu Jun 07 22:54:26 CST 2018]; root of context hierarchy
+2018-06-07 22:54:32,755 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 22:54:32,759 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 22:54:32,759 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 22:54:32,801 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:54:32,801 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:54:32,849 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:54:33,260 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 22:54:33,556 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 22:54:33,698 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 22:54:33,721 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 22:54:33,721 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 22:54:33,722 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 22:54:33,723 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 22:54:33,723 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 22:54:33,723 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 22:54:33,723 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@125e9e8
+2018-06-07 22:54:33,828 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 22:54:33,828 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 22:54:33,833 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 22:54:33,838 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 22:54:33,839 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 22:54:33,839 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 22:54:33,848 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:54:33,865 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 22:54:33,890 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 22:54:33,893 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 9.391 seconds (JVM running for 11.678)
+2018-06-07 22:55:51,984 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 12820 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 22:55:51,989 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 22:55:52,030 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cb7c7: startup date [Thu Jun 07 22:55:52 CST 2018]; root of context hierarchy
+2018-06-07 22:55:52,694 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 22:55:52,979 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 22:55:53,128 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c6c9cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 22:55:53,837 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 22:55:53,853 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:55:53,871 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 22:55:53,872 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 22:55:53,881 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 22:55:54,067 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 22:55:54,067 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2040 ms
+2018-06-07 22:55:54,243 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 22:55:54,247 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 22:55:54,247 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 22:55:54,247 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 22:55:54,248 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 22:55:55,255 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2cb7c7: startup date [Thu Jun 07 22:55:52 CST 2018]; root of context hierarchy
+2018-06-07 22:55:55,325 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 22:55:55,329 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 22:55:55,330 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 22:55:55,363 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:55:55,363 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:55:55,412 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:55:55,818 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 22:55:56,014 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 22:55:56,063 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 22:55:56,080 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 22:55:56,080 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 22:55:56,081 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 22:55:56,082 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 22:55:56,082 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 22:55:56,082 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 22:55:56,082 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1ca34e7
+2018-06-07 22:55:56,171 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 22:55:56,172 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 22:55:56,176 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 22:55:56,180 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 22:55:56,180 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 22:55:56,180 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 22:55:56,188 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:55:56,201 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 22:55:56,222 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 22:55:56,225 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.616 seconds (JVM running for 6.131)
+2018-06-07 22:59:21,488 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 5968 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 22:59:21,492 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 22:59:21,539 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d279ec: startup date [Thu Jun 07 22:59:21 CST 2018]; root of context hierarchy
+2018-06-07 22:59:22,192 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 22:59:22,475 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 22:59:22,635 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4fedcb23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 22:59:23,250 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 22:59:23,266 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:59:23,301 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 22:59:23,301 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 22:59:23,311 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 22:59:23,496 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 22:59:23,496 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1959 ms
+2018-06-07 22:59:23,652 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 22:59:23,655 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 22:59:23,655 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 22:59:23,655 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 22:59:23,655 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 22:59:24,600 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d279ec: startup date [Thu Jun 07 22:59:21 CST 2018]; root of context hierarchy
+2018-06-07 22:59:24,677 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 22:59:24,680 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 22:59:24,681 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 22:59:24,721 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:59:24,721 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:59:24,756 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 22:59:25,070 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 22:59:25,251 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 22:59:25,309 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 22:59:25,325 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 22:59:25,325 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 22:59:25,326 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 22:59:25,326 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 22:59:25,326 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 22:59:25,326 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 22:59:25,327 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@115c0a1
+2018-06-07 22:59:25,418 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 22:59:25,419 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 22:59:25,426 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 22:59:25,430 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 22:59:25,430 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 22:59:25,430 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 22:59:25,438 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 22:59:25,448 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 22:59:25,464 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 22:59:25,467 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.335 seconds (JVM running for 5.827)
+2018-06-07 23:03:57,444 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:03:57,444 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:03:57,473 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-06-07 23:09:10,483 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 12172 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:09:10,487 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:09:10,526 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18b43c7: startup date [Thu Jun 07 23:09:10 CST 2018]; root of context hierarchy
+2018-06-07 23:09:11,179 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:09:11,481 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:09:11,636 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$125d30b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:09:12,402 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:09:12,419 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:09:12,438 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:09:12,438 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:09:12,447 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:09:12,826 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:09:12,826 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2302 ms
+2018-06-07 23:09:12,996 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:09:13,001 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:09:13,001 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:09:13,001 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:09:13,002 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:09:13,986 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18b43c7: startup date [Thu Jun 07 23:09:10 CST 2018]; root of context hierarchy
+2018-06-07 23:09:14,055 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:09:14,063 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:09:14,064 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:09:14,099 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:09:14,099 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:09:14,142 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:09:14,449 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:09:14,641 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:09:14,692 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:09:14,708 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:09:14,708 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:09:14,709 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:09:14,710 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:09:14,710 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:09:14,710 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:09:14,710 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@2e0d57
+2018-06-07 23:09:14,816 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:09:14,817 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:09:14,825 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:09:14,829 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:09:14,829 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:09:14,829 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:09:14,838 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:09:14,852 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:09:14,872 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:09:14,875 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.748 seconds (JVM running for 6.038)
+2018-06-07 23:09:27,501 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:09:27,502 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:09:27,528 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-06-07 23:17:01,441 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 2704 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:17:01,446 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:17:01,502 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18d79be: startup date [Thu Jun 07 23:17:01 CST 2018]; root of context hierarchy
+2018-06-07 23:17:02,206 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:17:02,486 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:17:02,624 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21c015a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:17:03,264 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:17:03,281 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:17:03,300 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:17:03,301 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:17:03,310 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:17:03,489 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:17:03,489 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1991 ms
+2018-06-07 23:17:03,682 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:17:03,690 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:17:03,691 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:17:03,691 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:17:03,691 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:17:04,698 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18d79be: startup date [Thu Jun 07 23:17:01 CST 2018]; root of context hierarchy
+2018-06-07 23:17:04,776 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:17:04,781 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:17:04,782 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:17:04,824 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:17:04,824 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:17:04,862 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:17:05,188 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:17:05,367 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:17:05,425 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:17:05,443 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:17:05,443 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:17:05,444 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:17:05,445 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:17:05,445 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:17:05,445 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:17:05,445 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@115c0a1
+2018-06-07 23:17:05,535 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:17:05,535 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:17:05,540 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:17:05,544 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:17:05,544 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:17:05,544 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:17:05,551 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:17:05,562 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:17:05,578 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:17:05,581 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.487 seconds (JVM running for 5.969)
+2018-06-07 23:17:20,661 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:17:20,661 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:17:20,684 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-06-07 23:17:21,591 [http-nio-8083-exec-2] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-06-07 23:17:21,626 [http-nio-8083-exec-2] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-06-07 23:18:37,941 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 3684 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:18:37,948 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:18:38,024 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1573584: startup date [Thu Jun 07 23:18:38 CST 2018]; root of context hierarchy
+2018-06-07 23:18:38,830 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:18:39,132 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:18:39,286 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5cef45b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:18:40,015 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:18:40,029 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:18:40,061 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:18:40,062 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:18:40,077 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:18:40,290 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:18:40,291 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2272 ms
+2018-06-07 23:18:40,458 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:18:40,461 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:18:40,462 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:18:40,462 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:18:40,462 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:18:41,479 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1573584: startup date [Thu Jun 07 23:18:38 CST 2018]; root of context hierarchy
+2018-06-07 23:18:41,550 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:18:41,554 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:18:41,555 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:18:41,600 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:18:41,600 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:18:41,642 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:18:41,971 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:18:42,155 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:18:42,225 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:18:42,250 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:18:42,250 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:18:42,252 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:18:42,253 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:18:42,253 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:18:42,253 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:18:42,254 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@d25b6e
+2018-06-07 23:18:42,418 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:18:42,420 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:18:42,424 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:18:42,428 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:18:42,428 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:18:42,428 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:18:42,440 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:18:42,457 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:18:42,478 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:18:42,484 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.977 seconds (JVM running for 6.489)
+2018-06-07 23:18:46,323 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:18:46,323 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:18:46,346 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-06-07 23:18:47,564 [http-nio-8083-exec-2] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-06-07 23:18:47,596 [http-nio-8083-exec-2] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-06-07 23:20:44,694 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 376 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:20:44,698 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:20:44,740 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e74829: startup date [Thu Jun 07 23:20:44 CST 2018]; root of context hierarchy
+2018-06-07 23:20:45,409 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:20:45,728 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:20:45,882 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1ed683] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:20:46,522 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:20:46,539 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:20:46,566 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:20:46,566 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:20:46,577 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:20:46,899 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:20:46,899 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2161 ms
+2018-06-07 23:20:47,107 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:20:47,114 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:20:47,114 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:20:47,114 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:20:47,114 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:20:48,207 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e74829: startup date [Thu Jun 07 23:20:44 CST 2018]; root of context hierarchy
+2018-06-07 23:20:48,283 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:20:48,287 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:20:48,288 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:20:48,329 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:20:48,329 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:20:48,371 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:20:48,744 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:20:48,968 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:20:49,020 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:20:49,036 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:20:49,037 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:20:49,038 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:20:49,039 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:20:49,039 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:20:49,039 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:20:49,040 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@eac00e
+2018-06-07 23:20:49,141 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:20:49,142 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:20:49,147 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:20:49,151 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:20:49,151 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:20:49,151 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:20:49,159 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:20:49,174 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:20:49,190 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:20:49,195 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.842 seconds (JVM running for 6.414)
+2018-06-07 23:20:51,856 [http-nio-8083-exec-3] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:20:51,857 [http-nio-8083-exec-3] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:20:51,889 [http-nio-8083-exec-3] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-06-07 23:20:52,569 [http-nio-8083-exec-3] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-06-07 23:20:52,694 [http-nio-8083-exec-3] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-06-07 23:21:45,082 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 12052 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:21:45,087 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:21:45,130 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f08014: startup date [Thu Jun 07 23:21:45 CST 2018]; root of context hierarchy
+2018-06-07 23:21:45,779 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:21:46,095 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:21:46,246 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b475565c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:21:46,926 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:21:46,941 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:21:46,957 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:21:46,958 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:21:46,966 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:21:47,341 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:21:47,341 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2214 ms
+2018-06-07 23:21:47,497 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:21:47,500 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:21:47,500 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:21:47,501 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:21:47,501 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:21:48,432 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f08014: startup date [Thu Jun 07 23:21:45 CST 2018]; root of context hierarchy
+2018-06-07 23:21:48,503 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:21:48,506 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:21:48,507 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:21:48,546 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:21:48,546 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:21:48,587 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:21:48,957 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:21:49,162 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:21:49,232 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:21:49,251 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:21:49,252 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:21:49,253 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:21:49,253 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:21:49,253 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:21:49,253 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:21:49,253 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1585351
+2018-06-07 23:21:49,420 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:21:49,421 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:21:49,426 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:21:49,431 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:21:49,431 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:21:49,431 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:21:49,441 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:21:49,456 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:21:49,474 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:21:49,478 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.736 seconds (JVM running for 6.111)
+2018-06-07 23:21:53,496 [http-nio-8083-exec-3] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:21:53,497 [http-nio-8083-exec-3] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:21:53,520 [http-nio-8083-exec-3] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-06-07 23:28:38,380 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 5048 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:28:38,385 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:28:38,431 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78284b: startup date [Thu Jun 07 23:28:38 CST 2018]; root of context hierarchy
+2018-06-07 23:28:39,148 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:28:39,484 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:28:39,630 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c60db47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:28:40,386 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:28:40,400 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:28:40,417 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:28:40,417 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:28:40,431 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:28:40,605 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:28:40,606 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2178 ms
+2018-06-07 23:28:40,830 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:28:40,836 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:28:40,837 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:28:40,837 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:28:40,837 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:28:41,905 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78284b: startup date [Thu Jun 07 23:28:38 CST 2018]; root of context hierarchy
+2018-06-07 23:28:41,975 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:28:41,980 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:28:41,980 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:28:42,015 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:28:42,016 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:28:42,057 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:28:42,458 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:28:42,654 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:28:42,716 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:28:42,732 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:28:42,732 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:28:42,733 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:28:42,734 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:28:42,734 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:28:42,734 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:28:42,734 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@16c7012
+2018-06-07 23:28:42,817 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:28:42,818 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:28:42,828 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:28:42,831 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:28:42,832 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:28:42,832 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:28:42,840 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:28:42,853 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:28:42,869 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:28:42,871 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.834 seconds (JVM running for 6.169)
+2018-06-07 23:28:45,852 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:28:45,853 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:28:45,912 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2018-06-07 23:32:22,910 [main] INFO  [com.why.MyProject.WHYApplication] - Starting WHYApplication on why with PID 13984 (F:\MyProject\target\classes started by HY in F:\MyProject)
+2018-06-07 23:32:22,916 [main] INFO  [com.why.MyProject.WHYApplication] - No active profile set, falling back to default profiles: default
+2018-06-07 23:32:22,960 [main] INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5338df: startup date [Thu Jun 07 23:32:22 CST 2018]; root of context hierarchy
+2018-06-07 23:32:23,659 [main] INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-07 23:32:23,948 [main] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-07 23:32:24,087 [main] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a595b1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-07 23:32:24,700 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8083 (http)
+2018-06-07 23:32:24,717 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:32:24,748 [main] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2018-06-07 23:32:24,748 [main] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-07 23:32:24,758 [localhost-startStop-1] INFO  [org.apache.catalina.core.AprLifecycleListener] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\tts9\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:;F:\tts9\jdk1.8.0_45\bin;F:\tts9\jdk1.8.0_45\jre\bin;\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Common Files\Autodesk Shared\;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\opencv\build\x64\vc12\bin;D:\Program Files\opencv\build\x86\vc12\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;C:\Users\HY\AppData\Local\Microsoft\WindowsApps;F:\tts9\apache-maven-3.3.9\bin;D:\Program Files\MongoDB\Server\3.6\bin;D:\Program Files\CMake\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-06-07 23:32:24,966 [localhost-startStop-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2018-06-07 23:32:24,967 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2009 ms
+2018-06-07 23:32:25,128 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] - Servlet dispatcherServlet mapped to [/]
+2018-06-07 23:32:25,132 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-07 23:32:25,132 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-07 23:32:25,132 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-07 23:32:25,132 [localhost-startStop-1] INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-07 23:32:26,176 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5338df: startup date [Thu Jun 07 23:32:22 CST 2018]; root of context hierarchy
+2018-06-07 23:32:26,243 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/test/import],methods=[POST]}" onto public boolean com.why.MyProject.Controller.TestController.addUser(org.springframework.web.multipart.MultipartFile)
+2018-06-07 23:32:26,248 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-07 23:32:26,249 [main] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-07 23:32:26,299 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:32:26,299 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:32:26,345 [main] INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-07 23:32:26,667 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-06-07 23:32:26,858 [main] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-06-07 23:32:26,911 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-06-07 23:32:26,931 [main] INFO  [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-07 23:32:26,931 [main] INFO  [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2018-06-07 23:32:26,932 [main] INFO  [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-06-07 23:32:26,933 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-07 23:32:26,933 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2018-06-07 23:32:26,933 [main] INFO  [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2018-06-07 23:32:26,933 [main] INFO  [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@1e6f1bc
+2018-06-07 23:32:27,024 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Registering beans for JMX exposure on startup
+2018-06-07 23:32:27,025 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-07 23:32:27,029 [main] INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-07 23:32:27,033 [main] INFO  [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-06-07 23:32:27,033 [main] INFO  [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-06-07 23:32:27,033 [main] INFO  [org.quartz.core.QuartzScheduler] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2018-06-07 23:32:27,041 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8083"]
+2018-06-07 23:32:27,053 [main] INFO  [org.apache.tomcat.util.net.NioSelectorPool] - Using a shared selector for servlet write/read
+2018-06-07 23:32:27,067 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8083 (http) with context path ''
+2018-06-07 23:32:27,070 [main] INFO  [com.why.MyProject.WHYApplication] - Started WHYApplication in 4.525 seconds (JVM running for 5.882)
+2018-06-07 23:32:39,667 [http-nio-8083-exec-2] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-07 23:32:39,668 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-07 23:32:39,698 [http-nio-8083-exec-2] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-06-08 00:05:35,807 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6ab78d (No operations allowed after connection closed.)
+2018-06-08 00:05:35,810 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@1b10417 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,811 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@54621a (No operations allowed after connection closed.)
+2018-06-08 00:05:35,812 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@1b76542 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,813 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6cd75e (No operations allowed after connection closed.)
+2018-06-08 00:05:35,814 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@198e0b8 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,815 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@f00e3 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,816 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@6ce455 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,817 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@e3be38 (No operations allowed after connection closed.)
+2018-06-08 00:05:35,819 [http-nio-8083-exec-8] WARN  [com.zaxxer.hikari.pool.PoolBase] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@f7a51f (No operations allowed after connection closed.)
