@@ -19,6 +19,7 @@ public class TestController {
         String fileName = file.getOriginalFilename();
         try {
              a = testService.batchImport(fileName, file);
+             a= testService.batchImports(fileName,file);
         } catch (Exception e) {
             e.printStackTrace();
         }

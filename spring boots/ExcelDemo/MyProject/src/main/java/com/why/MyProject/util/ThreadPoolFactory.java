@@ -8,9 +8,9 @@ import java.util.concurrent.*;
 public class ThreadPoolFactory {
 
 
-    private static final int INIT_POOL_SIZE = 4;
+    private static final int INIT_POOL_SIZE = 10;
 
-    private static final int MAX_POOL_SIZE = 10;
+    private static final int MAX_POOL_SIZE = 20;
 
 
     // 创建线程池
