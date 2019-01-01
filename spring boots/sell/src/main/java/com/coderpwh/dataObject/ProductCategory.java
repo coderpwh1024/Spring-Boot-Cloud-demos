@@ -48,4 +48,10 @@ public class ProductCategory {
     public void setCategoryType(Integer categoryType) {
         this.categoryType = categoryType;
     }
+
+    public ProductCategory(String categoryName, Integer categoryType) {
+        this.categoryName = categoryName;
+        this.categoryType = categoryType;
+    }
+
 }

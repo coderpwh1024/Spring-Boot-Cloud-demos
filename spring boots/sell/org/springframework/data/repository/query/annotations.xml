@@ -1,0 +1,5 @@
+<root>
+    <item name='org.springframework.data.repository.query.QueryByExampleExecutor java.util.Optional&lt;S&gt; findOne(org.springframework.data.domain.Example&lt;S&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
