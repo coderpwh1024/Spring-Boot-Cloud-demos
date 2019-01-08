@@ -1,4 +1,4 @@
-package com.coderpwh.dataObject;
+package com.coderpwh.dataobject;
 
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
@@ -8,14 +8,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * @author coderpwh
- * @create 2018-12-30 23:42
- * @desc ${DESCRIPTION}
- **/
+ * 类目
+ * Created by coderpwh
+ * 2018-12-20 14:30
+ */
 @Entity
 @DynamicUpdate
 @Data
 public class ProductCategory {
+
     /** 类目id. */
     @Id
     @GeneratedValue
@@ -34,5 +35,4 @@ public class ProductCategory {
         this.categoryName = categoryName;
         this.categoryType = categoryType;
     }
-
 }
