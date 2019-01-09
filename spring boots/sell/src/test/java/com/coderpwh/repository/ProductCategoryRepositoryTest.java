@@ -29,7 +29,6 @@ public class ProductCategoryRepositoryTest {
         System.out.println(productCategory.toString());
     }
 
-    @Test
     public void saveTest() {
         ProductCategory productCategory = new ProductCategory();
         Date date = new Date();
@@ -39,6 +38,13 @@ public class ProductCategoryRepositoryTest {
         productCategory.setCreateTime(date);
         productCategory.setUpdateTime(date);
         repository.save(productCategory);
+    }
+
+    @Test
+    public void saveTest2() {
+        ProductCategory productCategory = new ProductCategory("女神最爱", 3);
+        ProductCategory result = repository.save(productCategory);
+        Assert.assertNotNull(result);
     }
 
 
