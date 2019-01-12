@@ -4,6 +4,8 @@ import com.coderpwh.dataobject.ProductCategory;
 import com.coderpwh.repository.ProductCategoryRepository;
 import com.coderpwh.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -11,6 +13,7 @@ import java.util.List;
  * @create 2019-01-09 23:42
  * @desc ${DESCRIPTION}
  **/
+@Service
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
