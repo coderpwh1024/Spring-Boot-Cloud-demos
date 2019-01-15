@@ -3,6 +3,8 @@ package com.coderpwh.service.impl;
 import com.coderpwh.Dto.CartDTO;
 import com.coderpwh.dataobject.ProductInfo;
 import com.coderpwh.enums.ProductStatusEnum;
+import com.coderpwh.enums.ResultEnum;
+import com.coderpwh.exception.SellException;
 import com.coderpwh.repository.ProductInfoRepository;
 import com.coderpwh.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -43,11 +46,31 @@ public class ProductServiceImpl implements ProductService {
         return repository.save(productInfo);
     }
 
+    /**
+     * 加库存
+     *
+     * @param cartDTOList
+     */
     @Override
+    @Transactional
     public void increaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO: cartDTOList) {
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if (productInfo == null) {
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+            Integer result = productInfo.getProductStock() + cartDTO.getProductQuantity();
+            productInfo.setProductStock(result);
 
+            repository.save(productInfo);
+        }
     }
 
+    /**
+     * 减库存
+     *
+     * @param cartDTOList
+     */
     @Override
     public void decreaseStock(List<CartDTO> cartDTOList) {
 
