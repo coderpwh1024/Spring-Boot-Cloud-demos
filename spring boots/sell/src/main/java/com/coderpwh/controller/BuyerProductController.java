@@ -22,6 +22,6 @@ public class BuyerProductController {
     @Autowired
     private CategoryService categoryService;
 
-   
+
 
 }
