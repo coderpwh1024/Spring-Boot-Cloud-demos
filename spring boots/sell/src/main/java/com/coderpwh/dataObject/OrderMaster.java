@@ -1,5 +1,6 @@
 package com.coderpwh.dataobject;
 
+import com.coderpwh.enums.PayStatusEnum;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -58,7 +59,7 @@ public class OrderMaster {
     /**
      * 支付状态, 默认为0未支付.
      */
-//    private Integer payStatus = PayStatusEnum.WAIT.getCode();
+    private Integer payStatus = PayStatusEnum.WAIT.getCode();
 
     /**
      * 创建时间.
