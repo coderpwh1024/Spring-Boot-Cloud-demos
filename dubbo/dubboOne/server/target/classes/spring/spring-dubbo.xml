@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--发布出去的dubbo服务类所在包的注解-->
+    <dubbo:annotation package="com.debug.mooc.dubbo.one.server.service.dubbo" />
+
+    <!--注册中心zookeeper配置信息-->
+    <dubbo:registry address="${dubbo.registry.address}" />
+
+    <!--支持两种协议的调用：rpc-dubbo协议；http协议-rest api-url调用-->
+    <dubbo:protocol name="rest" threads="500" contextpath="v1" server="tomcat" accepts="500"/>
+    <dubbo:protocol name="dubbo" />
+
+    <!--消费方信息配置-->
+	<dubbo:application name="dubboOne-consume" owner="debug" organization="dubbox"/>
+
+
+</beans>
