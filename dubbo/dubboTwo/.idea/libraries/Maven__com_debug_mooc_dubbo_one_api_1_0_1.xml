@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.debug.mooc.dubbo.one:api:1.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/debug/mooc/dubbo/one/api/1.0.1/api-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/debug/mooc/dubbo/one/api/1.0.1/api-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/debug/mooc/dubbo/one/api/1.0.1/api-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
