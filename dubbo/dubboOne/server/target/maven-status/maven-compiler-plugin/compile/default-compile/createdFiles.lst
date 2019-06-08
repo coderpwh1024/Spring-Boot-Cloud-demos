@@ -1,0 +1,3 @@
+com\debug\mooc\dubbo\one\server\BootMoreApplication.class
+com\debug\mooc\dubbo\one\server\controller\BaseController.class
+com\debug\mooc\dubbo\one\server\service\dubbo\DubboItemService.class
