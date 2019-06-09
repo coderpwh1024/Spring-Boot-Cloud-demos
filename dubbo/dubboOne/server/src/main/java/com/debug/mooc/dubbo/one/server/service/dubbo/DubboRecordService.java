@@ -1,5 +1,6 @@
 package com.debug.mooc.dubbo.one.server.service.dubbo;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.debug.mooc.dubbo.one.api.enums.StatusCode;
 import com.debug.mooc.dubbo.one.api.request.PushOrderDto;
 import com.debug.mooc.dubbo.one.api.response.BaseResponse;
@@ -25,6 +26,8 @@ import java.util.Date;
  * @create 2019-06-08 23:26
  * @desc ${DESCRIPTION}
  **/
+@Service(protocol = {"dubbo","rest"},validation = "true",version = "1.0",timeout = 30000)
+@Path("record")
 public class DubboRecordService implements IDubboRecordService {
 
 

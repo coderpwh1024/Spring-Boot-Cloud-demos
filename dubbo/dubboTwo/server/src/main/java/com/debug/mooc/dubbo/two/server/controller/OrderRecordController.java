@@ -41,7 +41,7 @@ public class OrderRecordController {
             log.info("接收到请求数据：{} ",pushRequest);
 
             //TODO:处理用户下单数据-发起用户下单接口的调用
-            //orderRecordService.pushOrder(pushRequest);
+//            orderRecordService.pushOrder(pushRequest);
             orderRecordService.pushOrderV2(pushRequest);
 
         }catch (Exception e){
