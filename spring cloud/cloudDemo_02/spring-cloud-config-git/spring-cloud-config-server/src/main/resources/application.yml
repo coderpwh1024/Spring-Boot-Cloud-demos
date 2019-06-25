@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+   config:
+     server:
+       git:
+         uri: https://github.com/ityouknow/spring-cloud-starter/     # 配置git仓库的地址
+         search-paths: config-repo
+         username:
+         password:
