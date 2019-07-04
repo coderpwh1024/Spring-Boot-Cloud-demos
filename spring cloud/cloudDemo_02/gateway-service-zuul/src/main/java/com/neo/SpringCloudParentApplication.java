@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringCloudParentApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SpringCloudParentApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCloudParentApplication.class, args);
+	}
 
 }
