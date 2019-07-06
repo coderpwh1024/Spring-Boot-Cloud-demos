@@ -6,6 +6,14 @@
 	<artifactId>spring-cloud-parent</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 
+	<modules>
+		<module>gateway-service-zuul-simple</module>
+		<module>spring-cloud-eureka</module>
+		<module>spring-cloud-producer</module>
+		<module>spring-cloud-producer-2</module>
+	</modules>
+
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
