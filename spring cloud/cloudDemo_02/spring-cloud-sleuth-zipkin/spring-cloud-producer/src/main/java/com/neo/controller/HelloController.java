@@ -7,12 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author coderpwh
- * @create 2019-07-14 17:56
- * @desc ${DESCRIPTION
- **/
-
 @RestController
 public class HelloController {
 
