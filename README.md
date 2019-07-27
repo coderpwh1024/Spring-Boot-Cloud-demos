@@ -14,4 +14,4 @@
 - [Spring Cloud入门](https://coderpwh.com/2018/08/07/springCloud/)
 - [springCloud服务提供与调用 ](https://coderpwh.com/2019/06/16/springCloud-feign/)
 - [SpringCloud Config配置 ](https://coderpwh.com/2019/06/26/springcloud--config/)
-- [SpringCloud ZUUL](https://coderpwh.com/2019/07/07/springcloud-zuul/)
+- [SpringCloud zuul](https://coderpwh.com/2019/07/07/springcloud-zuul/)
