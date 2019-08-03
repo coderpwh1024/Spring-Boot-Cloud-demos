@@ -22,13 +22,10 @@ public class UserController {
 	@GetMapping("/add")
 	public Object add() {
 		for (long i = 0; i < 100; i++) {
-		User user = new User();
-		    Long id =	SnowFlake.nextId();
-			user.setId(id);
-			user.setCity("深圳"+i+"--"+id);
-			user.setName("李四"+i+"--"+id);
+			User user = new User();
+			user.setCity("深圳");
+			user.setName("李四");
 			userService.add(user);
-		 
 		}
 		return "success";
 	}
