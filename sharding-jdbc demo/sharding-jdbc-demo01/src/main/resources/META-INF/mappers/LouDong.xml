@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.cxytiandi.sharding.repository.LouDongRepository">
+<mapper namespace="com.coderpwh.repository.LouDongRepository">
     
-    <resultMap id="baseResultMap" type="com.cxytiandi.sharding.po.LouDong">
+    <resultMap id="baseResultMap" type="com.coderpwh.po.LouDong">
         <result column="id" property="id" jdbcType="VARCHAR" />
         <result column="city" property="city" jdbcType="VARCHAR" />
         <result column="region" property="region" jdbcType="VARCHAR" />

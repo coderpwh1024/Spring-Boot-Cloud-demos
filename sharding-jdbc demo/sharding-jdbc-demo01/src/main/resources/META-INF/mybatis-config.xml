@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="com.cxytiandi.sharding.po"/>
+        <package name="com.coderpwh.po"/>
     </typeAliases>
     <mappers>
         <mapper resource="META-INF/mappers/User.xml"/>

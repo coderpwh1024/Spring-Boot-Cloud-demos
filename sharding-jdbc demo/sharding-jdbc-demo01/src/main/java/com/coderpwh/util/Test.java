@@ -11,11 +11,10 @@ public class Test {
     public static void main(String[] args) {
 
 
-        for (int i = 0; i < 100; i++) {
-            Long id = SnowFlake.nextId();
+        Integer a =12;
+        System.out.println(a.longValue());
+        long b =15544L;
+        System.out.println(b);
 
-            System.out.println(id);
-
-        }
     }
 }
