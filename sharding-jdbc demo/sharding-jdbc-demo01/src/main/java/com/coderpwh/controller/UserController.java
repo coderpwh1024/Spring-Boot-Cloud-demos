@@ -23,8 +23,8 @@ public class UserController {
     public Object add() {
         for (long i = 0; i < 100; i++) {
             User user = new User();
-            Long id = SnowFlake.nextId();
-            user.setId(id);
+            // Long id = SnowFlake.nextId();
+            user.setId(i);
             user.setCity("深圳"+"-"+i);
             user.setName("李四"+"-"+i);
             userService.add(user);
