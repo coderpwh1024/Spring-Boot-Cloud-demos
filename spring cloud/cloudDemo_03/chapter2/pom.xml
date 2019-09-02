@@ -4,7 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.coderpwh</groupId>
 	<artifactId>chapter2</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>service-hi</module>
+		<module>service-hi</module>
+	</modules>
 	<name>chapter2</name>
 	<description>Demo project for Spring Boot</description>
 
