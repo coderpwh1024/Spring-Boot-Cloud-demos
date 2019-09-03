@@ -18,6 +18,8 @@
 
     <modules>
         <module>service-hi</module>
+        <module>service-ribbon</module>
+        <module>service-feign</module>
     </modules>
 
 
