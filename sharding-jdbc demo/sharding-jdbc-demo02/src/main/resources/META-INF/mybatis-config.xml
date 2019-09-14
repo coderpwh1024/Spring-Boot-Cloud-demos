@@ -7,6 +7,7 @@
         <package name="com.coderpwh.po"/>
     </typeAliases>
     <mappers>
-        <mapper resource="META-INF/mappers/.xml"/>
+        <mapper resource="META-INF/mappers/OrderInfoMapper.xml"/>
+        <!--<mapper resource="META-INF/mappers/.xml"/>-->
     </mappers>
 </configuration>
