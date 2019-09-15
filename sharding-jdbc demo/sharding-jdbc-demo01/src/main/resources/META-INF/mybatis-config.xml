@@ -7,8 +7,8 @@
         <package name="com.coderpwh.po"/>
     </typeAliases>
     <mappers>
-        <!--<mapper resource="META-INF/mappers/User.xml"/>
-        <mapper resource="META-INF/mappers/LouDong.xml"/>-->
-        <mapper resource="META-INF/mappers/.xml"/>
+        <mapper resource="META-INF/mappers/User.xml"/>
+        <mapper resource="META-INF/mappers/LouDong.xml"/>
+       <!-- <mapper resource="META-INF/mappers/.xml"/>-->
     </mappers>
 </configuration>
