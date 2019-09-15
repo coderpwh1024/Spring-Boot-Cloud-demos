@@ -1,6 +1,9 @@
 package com.coderpwh.repository;
 
+import com.coderpwh.po.OrderInfo;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
  * @author coderpwh
@@ -10,7 +13,14 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface OrderInfoRepository {
 
+    /**
 
+     * 通过用户id 查询
+     *
+     * @param createrId
+     * @return
+     */
+    public List<OrderInfo> selectByUserId(Long createrId);
 
 
 }

@@ -1,6 +1,8 @@
 package com.coderpwh.service;
 
 import com.coderpwh.po.OrderInfo;
+import com.coderpwh.repository.OrderInfoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,13 +14,15 @@ import java.util.List;
  **/
 
 @Service
-public class OrderInfoServiceImpl implements  OrderInfoService {
+public class OrderInfoServiceImpl implements OrderInfoService {
 
-
+    @Autowired
+    private OrderInfoRepository orderInfoRepository;
 
 
     @Override
     public List<OrderInfo> selectByUserId(Long userId) {
-        return null;
+        return orderInfoRepository.selectByUserId(userId);
+
     }
 }

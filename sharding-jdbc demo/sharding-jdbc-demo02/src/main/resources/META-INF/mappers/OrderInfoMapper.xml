@@ -36,4 +36,12 @@
 
     </sql>
 
+
+    <select id="selectByUserId" resultMap="BaseResultMap"  parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List"/>
+        from t_order_info t where t.creater_Id=#{createrId,jdbcType=BIGINT}
+    </select>
+
+
 </mapper>
