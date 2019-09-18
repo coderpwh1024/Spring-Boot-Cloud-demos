@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderpwh.repository.OrderGoodRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.coderpwh.po.OrderGood">
+        <id column="OG_ID" property="ogId" />
+        <result column="ORDER_ID" property="orderId" />
+        <result column="ORDER_NO" property="orderNo" />
+        <result column="PACKAGE_NO" property="packageNo" />
+        <result column="GOOD_ID" property="goodId" />
+        <result column="SALE_ID" property="saleId" />
+        <result column="GOOD_SKU" property="goodSku" />
+        <result column="GOOD_NAME" property="goodName" />
+        <result column="GOOD_NUM" property="goodNum" />
+        <result column="GOOD_PRICE" property="goodPrice" />
+        <result column="GOOD_AMOUNT" property="goodAmount" />
+        <result column="MODEL_NAME" property="modelName" />
+        <result column="VIRTUAL_FLAG" property="virtualFlag" />
+        <result column="VIRTUAL_TYPE" property="virtualType" />
+        <result column="GOOD_IMAGE" property="goodImage" />
+        <result column="DISCOUNT_AMOUNT" property="discountAmount" />
+        <result column="COUPON_AMOUNT" property="couponAmount" />
+        <result column="SNAPSHOT_DATA" property="snapshotData" />
+        <result column="GOLD_PRICE" property="goldPrice" />
+        <result column="MEMBER_PRICE" property="memberPrice" />
+        <result column="LOGISTICS_AMOUNT" property="logisticsAmount" />
+        <result column="DEL_FLAG" property="delFlag" />
+        <result column="CREATER_ID" property="createrId" />
+        <result column="CREATER_TIME" property="createrTime" />
+    </resultMap>
+
+</mapper>
