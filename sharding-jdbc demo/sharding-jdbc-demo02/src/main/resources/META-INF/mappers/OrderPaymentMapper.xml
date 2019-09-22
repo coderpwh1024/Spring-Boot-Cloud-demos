@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderpwh.repository.OrderPaymentRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.coderpwh.po.OrderPayment">
+        <id column="PAY_ID" property="payId"/>
+        <result column="ORDER_ID" property="orderId"/>
+        <result column="ORDER_NO" property="orderNo"/>
+        <result column="PAY_TYPE" property="payType"/>
+        <result column="PAY_AMOUNT" property="payAmount"/>
+        <result column="PAY_TIME" property="payTime"/>
+        <result column="PAY_STATUS" property="payStatus"/>
+        <result column="PAY_NO" property="payNo"/>
+        <result column="PAY_DESC" property="payDesc"/>
+        <result column="CREATER_ID" property="createrId"/>
+        <result column="CREATER_TIME" property="createrTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        PAY_ID,ORDER_ID,ORDER_NO,PAY_TYPE,PAY_AMOUNT,PAY_TIME,PAY_STATUS,PAY_NO,PAY_DESC,CREATER_ID,CREATER_TIME
+    </sql>
+    
+</mapper>
