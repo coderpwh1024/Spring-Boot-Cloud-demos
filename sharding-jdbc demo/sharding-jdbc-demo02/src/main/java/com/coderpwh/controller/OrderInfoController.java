@@ -30,4 +30,17 @@ public class OrderInfoController {
     }
 
 
+    @RequestMapping(value = "/orderList", method = RequestMethod.GET)
+    public Object getOrderList(@NotNull Long userId) {
+
+        return null;
+    }
+
+    // todo 根据用户id ,订单号 查看订单详情
+
+    // todo  根据订单号查看订单详情(无订单号)
+
+    // todo 根据用户手机号模糊搜索订单
+
+    
 }
