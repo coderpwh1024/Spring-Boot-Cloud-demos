@@ -23,5 +23,54 @@ public class OrderInfoListVo {
 
     private String goodImage;
 
+    public OrderInfoListVo() {
+    }
 
+    public String getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(String orderNo) {
+        this.orderNo = orderNo;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public String getGoodName() {
+        return goodName;
+    }
+
+    public void setGoodName(String goodName) {
+        this.goodName = goodName;
+    }
+
+    public String getGoodId() {
+        return goodId;
+    }
+
+    public void setGoodId(String goodId) {
+        this.goodId = goodId;
+    }
+
+    public String getGoodSku() {
+        return goodSku;
+    }
+
+    public void setGoodSku(String goodSku) {
+        this.goodSku = goodSku;
+    }
+
+    public String getGoodImage() {
+        return goodImage;
+    }
+
+    public void setGoodImage(String goodImage) {
+        this.goodImage = goodImage;
+    }
 }

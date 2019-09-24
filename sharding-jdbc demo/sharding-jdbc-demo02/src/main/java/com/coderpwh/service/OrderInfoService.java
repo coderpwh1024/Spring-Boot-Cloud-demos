@@ -1,6 +1,7 @@
 package com.coderpwh.service;
 
 import com.coderpwh.po.OrderInfo;
+import com.coderpwh.vo.OrderInfoListVo;
 
 import java.util.List;
 
@@ -19,6 +20,15 @@ public interface OrderInfoService {
      * @return
      */
     public List<OrderInfo> selectByUserId(Long userId);
+
+
+    /**
+     * 查询订单列表
+     *
+     * @param userId
+     * @return
+     */
+    List<OrderInfoListVo> selectOrderList(Long userId);
 
 
 }

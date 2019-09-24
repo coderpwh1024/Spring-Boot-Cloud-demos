@@ -2,6 +2,7 @@ package com.coderpwh.controller;
 
 import com.coderpwh.po.OrderInfo;
 import com.coderpwh.service.OrderInfoService;
+import com.coderpwh.vo.OrderInfoListVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -32,6 +33,8 @@ public class OrderInfoController {
 
     @RequestMapping(value = "/orderList", method = RequestMethod.GET)
     public Object getOrderList(@NotNull Long userId) {
+
+         List<OrderInfoListVo> list = orderInfoService.selectOrderList(userId);
 
         return null;
     }
