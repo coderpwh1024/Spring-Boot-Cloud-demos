@@ -29,5 +29,23 @@
         <result column="CREATER_ID" property="createrId" />
         <result column="CREATER_TIME" property="createrTime" />
     </resultMap>
+    
+       <sql id="Base_Column_List">
+        OG_ID,ORDER_ID,ORDER_NO,ORDER_NO,SALE_ID,GOOD_SKU,GOOD_NAME,GOOD_NUM,GOOD_PRICE,GOOD_AMOUNT,
+        MODEL_NAME,VIRTUAL_FLAG,VIRTUAL_TYPE,GOOD_IMAGE,DISCOUNT_AMOUNT,COUPON_AMOUNT,SNAPSHOT_DATA,GOLD_PRICE,MEMBER_PRICE,LOGISTICS_AMOUNT,DEL_FLAG,CREATER_ID,CREATER_TIME
+    </sql>
+
+
+    <select id="selectOrderList" resultMap="OrderList" parameterType="java.lang.Long">
+     select  t.order_type , g.order_no , g.creater_time, g.good_id,g.good_sku,g.good_image,g.good_num
+      from  t_order_good g, t_order_info
+      t where t.order_no=g.order_no and g.creater_id=#{createrId,jdbcType=BIGINT} order by g.creater_time desc
+    </select>
+
+    <select id="getGood" resultMap="OrderList" parameterType="java.lang.Long">
+     select  g.order_no , g.creater_time, g.good_id,g.good_sku,g.good_image,g.good_num
+      from  t_order_good g
+       where  g.creater_id=#{createrId,jdbcType=BIGINT} order by g.creater_time desc
+    </select>
 
 </mapper>
