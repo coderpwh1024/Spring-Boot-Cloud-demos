@@ -19,6 +19,9 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
     @Autowired
     private OrderInfoRepository orderInfoRepository;
+    
+     @Autowired
+    private OrderGoodRepository orderGoodRepository;
 
 
     @Override
@@ -27,8 +30,19 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
     }
 
+     /**
+     * 获取用户的订单列表
+     *
+     * @param userId
+     * @return
+     */
     @Override
-    public List<OrderInfoListVo> selectOrderList(Long userId) {
-        return null;
+    public List<OrderInfoListDto> selectOrderList(Long userId) {
+
+        /* List<OrderInfoListDto> list = orderGoodRepository.selectOrderList(userId);*/
+
+
+        List<OrderInfoListDto> list = orderGoodRepository.getGood(userId);
+        return list;
     }
 }
