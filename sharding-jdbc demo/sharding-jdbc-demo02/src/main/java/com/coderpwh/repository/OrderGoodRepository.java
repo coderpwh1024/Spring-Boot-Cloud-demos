@@ -9,5 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  **/
 @Mapper
 public interface OrderGoodRepository {
+    List<OrderInfoListDto> selectOrderList(Long userId);
 
+    List<OrderInfoListDto> getGood(Long userId);
 }
