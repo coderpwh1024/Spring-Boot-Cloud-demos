@@ -41,6 +41,12 @@ public class OrderInfoController {
 
     // todo 根据用户id ,订单号 查看订单详情
 
+    @RequestMapping(value = "/get/orderDeatail")
+    public Object getOrderDetail(@RequestBody OrderDetailVo orderDetailVo) {
+        List<OrderDetailDto> list = orderInfoService.selectOrderDetail(orderDetailVo);
+        return list;
+    }
+
     // todo  根据订单号查看订单详情(无订单号)
 
     // todo 根据用户手机号模糊搜索订单
