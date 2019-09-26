@@ -45,4 +45,21 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         List<OrderInfoListDto> list = orderGoodRepository.getGood(userId);
         return list;
     }
+    
+     /**
+     * 订单详情
+     *
+     * @param orderDetailVo
+     * @return
+     */
+    @Override
+    public List<OrderDetailDto> selectOrderDetail(OrderDetailVo orderDetailVo) {
+        List<OrderDetailDto> list = new ArrayList<>();
+        //  获取包裹号
+        List<String> packageList  = orderPackageRepository.selectByUserIdOrderNo(orderDetailVo.getOrderNo(), orderDetailVo.getUserId());
+        
+        return null;
+    }
+
+    
 }
