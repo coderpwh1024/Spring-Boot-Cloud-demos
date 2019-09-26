@@ -22,6 +22,9 @@ public class OrderInfoServiceImpl implements OrderInfoService {
     
      @Autowired
     private OrderGoodRepository orderGoodRepository;
+    
+      @Autowired
+    private OrderPackageRepository orderPackageRepository;
 
 
     @Override
