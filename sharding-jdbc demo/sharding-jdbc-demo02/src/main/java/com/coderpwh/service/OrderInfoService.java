@@ -29,6 +29,14 @@ public interface OrderInfoService {
      * @return
      */
     List<OrderInfoListVo> selectOrderList(Long userId);
+    
+       /**
+     * 查看订单详情
+     *
+     * @param orderDetailVo
+     * @return
+     */
+    List<OrderDetailDto> selectOrderDetail(OrderDetailVo orderDetailVo);
 
 
 }

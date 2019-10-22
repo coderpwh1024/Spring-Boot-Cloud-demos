@@ -30,5 +30,9 @@
      VIRTUAL_GOOD,DEL_FLAG,CREATER_ID,CREATER_TIME,MODIFY_TIME,GOLD_PRICE
     </sql>
 
+       <select id="selectByUserIdOrderNo" resultMap="BaseResultMap" parameterType="java.lang.Long">
+         select PACKAGE_NO  from t_order_package  where order_no =#{orderNo,jdbcType=VARCHAR}
+         AND creater_Id=#{createrId,jdbcType=BIGINT}
+    </select>
 
 </mapper>
