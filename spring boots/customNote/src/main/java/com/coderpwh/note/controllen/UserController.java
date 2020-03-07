@@ -20,7 +20,7 @@ public class UserController {
     private final Logger logger = LoggerFactory.getLogger("");
 
     @RequestMapping(value = "/get/userInfo", method = RequestMethod.GET)
-    @KthLog("哥自定义的注解")
+    @KthLog("专门为慧慧童鞋写的注解")
     public Object getUserInfo(@RequestParam("userName") String userName) {
         logger.info("开始调用接口了");
         return userName;
