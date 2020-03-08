@@ -32,15 +32,16 @@ public class LimitInterceptor {
 
     private static final Logger logger = LoggerFactory.getLogger(LimitInterceptor.class);
 
+
     private final RedisTemplate<String, Serializable> limitRedisTemplate;
 
     @Autowired
-    public LimitInterceptor(RedisTemplate<String, Serializable> limitRedisTemplate) {
-        this.limitRedisTemplate = limitRedisTemplate;
+    public LimitInterceptor(RedisTemplate<String, Serializable> redis) {
+        this.limitRedisTemplate = redis;
     }
 
 
-    @Around("execution(public * *(..)) && @annotation(com.carry.annotation.Limit)")
+    @Around("execution(public * *(..)) && @annotation(com.coderpwh.limit.config.Limit)")
     public Object interceptor(ProceedingJoinPoint pjp) {
         MethodSignature signature = (MethodSignature) pjp.getSignature();
         Method method = signature.getMethod();
@@ -106,6 +107,7 @@ public class LimitInterceptor {
 
     /**
      * 获取IP地址
+     *
      * @return
      */
     public String getIpAddress() {
