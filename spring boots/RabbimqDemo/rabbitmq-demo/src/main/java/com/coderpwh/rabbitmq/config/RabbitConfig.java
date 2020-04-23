@@ -4,6 +4,7 @@ package com.coderpwh.rabbitmq.config;
 import com.coderpwh.rabbitmq.message.Demo01Message;
 import com.coderpwh.rabbitmq.message.Demo02Message;
 import com.coderpwh.rabbitmq.message.Demo03Message;
+import com.coderpwh.rabbitmq.message.Demo04Message;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.amqp.core.*;
@@ -138,6 +139,40 @@ public class RabbitConfig {
         @Bean
         public Binding demo03BindingB() {
             return BindingBuilder.bind(demo03QueueB()).to(demo03Exchange());
+        }
+
+    }
+
+    /**
+     * Headers Exchange 示例的配置类
+     */
+    public static class HeadersExchangeDemoConfiguration {
+
+        // 创建 Queue
+        @Bean
+        public Queue demo04Queue() {
+            return new Queue(Demo04Message.QUEUE, // Queue 名字
+                    true, // durable: 是否持久化
+                    false, // exclusive: 是否排它
+                    false); // autoDelete: 是否自动删除
+        }
+
+        // 创建 Headers Exchange
+        @Bean
+        public HeadersExchange demo04Exchange() {
+            return new HeadersExchange(Demo04Message.EXCHANGE,
+                    true,  // durable: 是否持久化
+                    false);  // exclusive: 是否排它
+        }
+
+        // 创建 Binding
+        // Exchange：Demo04Message.EXCHANGE
+        // Queue：Demo04Message.QUEUE
+        // Headers: Demo04Message.HEADER_KEY + Demo04Message.HEADER_VALUE
+        @Bean
+        public Binding demo4Binding() {
+            return BindingBuilder.bind(demo04Queue()).to(demo04Exchange())
+                    .where(Demo04Message.HEADER_KEY).matches(Demo04Message.HEADER_VALUE); // 配置 Headers 匹配
         }
 
     }
