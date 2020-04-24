@@ -59,7 +59,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587625134454</updated>
-      <workItem from="1587625136786" duration="7284000" />
+      <workItem from="1587625136786" duration="8225000" />
+      <workItem from="1587691167634" duration="1399000" />
     </task>
     <servers />
   </component>
@@ -67,6 +68,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587691715532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587691715532" />
     <state x="663" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587625460733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -75,10 +80,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1241" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587631171220" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1587625195304">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1587692226919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587625195304" />
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587692226919" />
     <state x="453" y="161" key="SettingsEditor" timestamp="1587625318874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
