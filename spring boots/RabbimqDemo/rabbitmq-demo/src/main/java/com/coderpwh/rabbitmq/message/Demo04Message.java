@@ -18,14 +18,15 @@ public class Demo04Message implements Serializable {
     public static final String HEADER_VALUE = "red";
 
 
-    private  Integer id;
+    private Integer id;
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public Demo04Message setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     @Override
