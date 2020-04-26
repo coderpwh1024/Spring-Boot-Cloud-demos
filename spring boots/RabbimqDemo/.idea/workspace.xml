@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,23 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Demo03ProducerTest.testSyncSend">
-    <configuration name="Demo01ProducerTest.nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rabbitmq-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.coderpwh.rabbitmq.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.coderpwh.rabbitmq.producer" />
-      <option name="MAIN_CLASS_NAME" value="com.coderpwh.rabbitmq.producer.Demo01ProducerTest" />
-      <option name="METHOD_NAME" value="nothing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Demo04ProducerTest.testSyncSendSuccess">
     <configuration name="Demo01ProducerTest.nothing02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rabbitmq-demo" />
       <extension name="coverage">
@@ -136,13 +120,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo04ProducerTest.testSyncSendSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coderpwh.rabbitmq.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.coderpwh.rabbitmq.producer" />
+      <option name="MAIN_CLASS_NAME" value="com.coderpwh.rabbitmq.producer.Demo04ProducerTest" />
+      <option name="METHOD_NAME" value="testSyncSendSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo04ProducerTest.testSyncSendSuccess" />
         <item itemvalue="JUnit.Demo03ProducerTest.testSyncSend" />
         <item itemvalue="JUnit.Demo02ProducerTest.testSyncSendFailure" />
         <item itemvalue="JUnit.Demo02ProducerTest.testSyncSendSuccess" />
         <item itemvalue="JUnit.Demo01ProducerTest.nothing02" />
-        <item itemvalue="JUnit.Demo01ProducerTest.nothing" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,7 @@
       <workItem from="1587625136786" duration="8225000" />
       <workItem from="1587691167634" duration="3280000" />
       <workItem from="1587707106263" duration="7420000" />
-      <workItem from="1587888636528" duration="1720000" />
+      <workItem from="1587888636528" duration="2681000" />
     </task>
     <servers />
   </component>
@@ -199,22 +199,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587692226919" />
-    <state width="1877" height="447" key="GridCell.Tab.0.bottom" timestamp="1587714630742">
+    <state width="1877" height="293" key="GridCell.Tab.0.bottom" timestamp="1587891333088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587714630742" />
-    <state width="1877" height="447" key="GridCell.Tab.0.center" timestamp="1587714630742">
+    <state width="1877" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587891333088" />
+    <state width="1877" height="293" key="GridCell.Tab.0.center" timestamp="1587891333088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587714630742" />
-    <state width="1877" height="447" key="GridCell.Tab.0.left" timestamp="1587714630742">
+    <state width="1877" height="293" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587891333088" />
+    <state width="1877" height="293" key="GridCell.Tab.0.left" timestamp="1587891333088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587714630742" />
-    <state width="1877" height="447" key="GridCell.Tab.0.right" timestamp="1587714630742">
+    <state width="1877" height="293" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587891333088" />
+    <state width="1877" height="293" key="GridCell.Tab.0.right" timestamp="1587891333088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="447" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587714630742" />
+    <state width="1877" height="293" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587891333088" />
     <state width="1877" height="280" key="GridCell.Tab.1.bottom" timestamp="1587714630736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -251,10 +251,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587625318874" />
-    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587889255562">
+    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587890769691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587889255562" />
+    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587890769691" />
     <state x="557" y="213" width="806" height="614" key="find.popup" timestamp="1587712640810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,6 +263,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587625208338" />
+    <state x="1131" y="145" key="refactoring.ChangeSignatureDialog" timestamp="1587891125329">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1131" y="145" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587891125329" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1587636101637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
