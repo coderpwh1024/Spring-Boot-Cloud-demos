@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,23 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Demo02ProducerTest.testSyncSendFailure">
-    <configuration name="Demo01ProducerTest.AsyncSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rabbitmq-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.coderpwh.rabbitmq.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.coderpwh.rabbitmq.producer" />
-      <option name="MAIN_CLASS_NAME" value="com.coderpwh.rabbitmq.producer.Demo01ProducerTest" />
-      <option name="METHOD_NAME" value="AsyncSend" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Demo03ProducerTest.testSyncSend">
     <configuration name="Demo01ProducerTest.nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rabbitmq-demo" />
       <extension name="coverage">
@@ -136,13 +120,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo03ProducerTest.testSyncSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coderpwh.rabbitmq.producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.coderpwh.rabbitmq.producer" />
+      <option name="MAIN_CLASS_NAME" value="com.coderpwh.rabbitmq.producer.Demo03ProducerTest" />
+      <option name="METHOD_NAME" value="testSyncSend" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo03ProducerTest.testSyncSend" />
         <item itemvalue="JUnit.Demo02ProducerTest.testSyncSendFailure" />
         <item itemvalue="JUnit.Demo02ProducerTest.testSyncSendSuccess" />
         <item itemvalue="JUnit.Demo01ProducerTest.nothing02" />
         <item itemvalue="JUnit.Demo01ProducerTest.nothing" />
-        <item itemvalue="JUnit.Demo01ProducerTest.AsyncSend" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,7 @@
       <workItem from="1587625136786" duration="8225000" />
       <workItem from="1587691167634" duration="3280000" />
       <workItem from="1587707106263" duration="7420000" />
-      <workItem from="1587888636528" duration="452000" />
+      <workItem from="1587888636528" duration="889000" />
     </task>
     <servers />
   </component>
@@ -251,10 +251,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587625318874" />
-    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587712813516">
+    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587889255562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587712813516" />
+    <state x="698" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587889255562" />
     <state x="557" y="213" width="806" height="614" key="find.popup" timestamp="1587712640810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
