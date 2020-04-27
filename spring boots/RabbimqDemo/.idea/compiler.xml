@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbitmq-demo" />
+        <module name="rabbitmq-demo-batch" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rabbitmq-demo" options="-parameters" />
+      <module name="rabbitmq-demo-batch" options="-parameters" />
     </option>
   </component>
 </project>
