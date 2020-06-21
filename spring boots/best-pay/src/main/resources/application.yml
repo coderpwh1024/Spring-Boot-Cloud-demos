@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations: classpath*:sqlmap/**/*.xml
+  type-aliases-package: com.github.lly835.entity
+
+

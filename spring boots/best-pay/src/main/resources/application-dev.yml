@@ -1,0 +1,39 @@
+wechat:
+  mpAppId:   
+  mpsecret:  
+  mchId: 
+  mchKey:  
+  keyPath:  
+  notifyUrl:  
+  miniAppId: wxxxxxxxxxxx6bf9b
+  miniAppSecret: xxbc6xxxxxxxxxxxxxx9c49d
+  appAppId: wxxxxxxxxxxxx43b0
+
+alipay:
+  appId: appId
+  privateKey: 商户私钥
+  aliPayPublicKey: 支付宝公钥
+  notifyUrl: http://xxx.com/notify
+  returnUrl: http://xxx.com/return
+  sandbox: true #是否使用沙箱
+
+
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url:  
+    username:  
+    password: 
+
+  redis:
+    host:  
+    port: 
+    password:  
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 0
