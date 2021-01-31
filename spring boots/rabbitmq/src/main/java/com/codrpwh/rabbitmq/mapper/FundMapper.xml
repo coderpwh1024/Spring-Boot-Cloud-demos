@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.codrpwh.rabbitmq.mapper.FundMapper" >
+    <resultMap id="BaseResultMap" type="com.codrpwh.rabbitmq.pojo.Fund" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="code" property="code"/>
+        <result column="name" property="name"/>
+        <result column="net_value" property="netValue"/>
+        <result column="yield_of_one_year" property="yieldOfOneYear"/>
+        <result column="yield_of_two_year" property="yieldOfTwoYear"/>
+        <result column="yield_of_three_year" property="yieldOfThreeYear"/>
+        <result column="yield_of_five_year" property="yieldOfFiveYear"/>
+        <result column="type" property="type"/>
+        <result column="established_time" property="establishedTime"/>
+        <result column="asset" property="asset"/>
+        <result column="manager" property="manager"/>
+        <result column="status" property="status"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="created_time" property="createdTime"/>
+        <result column="updated_time" property="updatedTime"/>
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id
+        ,code
+        ,name
+        ,net_value
+        ,yield_of_one_year
+        ,yield_of_two_year
+        ,yield_of_three_year
+        ,yield_of_five_year
+        ,type
+        ,established_time
+        ,asset
+        ,manager
+        ,status
+        ,is_deleted
+        ,created_time
+        ,updated_time
+    </sql>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM fund
+    </select>
+
+    <select id="selectOne" parameterType="int" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM fund
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.codrpwh.rabbitmq.pojo.Fund">
+        INSERT INTO fund(
+            code
+            ,name
+            ,net_value
+            ,yield_of_one_year
+            ,yield_of_two_year
+            ,yield_of_three_year
+            ,yield_of_five_year
+            ,type
+            ,established_time
+            ,asset
+            ,manager
+        )
+        VALUES (
+            #{code}
+            ,#{name}
+            ,#{netValue}
+            ,#{yieldOfOneYear}
+            ,#{yieldOfTwoYear}
+            ,#{yieldOfThreeYear}
+            ,#{yieldOfFiveYear}
+            ,#{type}
+            ,#{establishedTime}
+            ,#{asset}
+            ,#{manager}
+        )
+    </insert>
+
+    <update id="update" parameterType="com.codrpwh.rabbitmq.pojo.Fund">
+        UPDATE fund SET
+        <if test="code != null and code != ''">
+            code = #{code},
+        </if>
+        <if test="name != null and name != ''">
+            name = #{name},
+        </if>
+        <if test="netValue != null and netValue != ''">
+            net_value = #{netValue},
+        </if>
+        <if test="yieldOfOneYear != null and yieldOfOneYear != ''">
+            yield_of_one_year = #{yieldOfOneYear},
+        </if>
+        <if test="yieldOfTwoYear != null and yieldOfTwoYear != ''">
+            yield_of_two_year = #{yieldOfTwoYear},
+        </if>
+        <if test="yieldOfThreeYear != null and yieldOfThreeYear != ''">
+            yield_of_three_year = #{yieldOfThreeYear},
+        </if>
+        <if test="yieldOfFiveYear != null and yieldOfFiveYear != ''">
+            yield_of_five_year = #{yieldOfFiveYear},
+        </if>
+        <if test="type != null and type != ''">
+            type = #{type},
+        </if>
+        <if test="establishedTime != null and establishedTime != ''">
+            established_time = #{establishedTime},
+        </if>
+        <if test="asset != null and asset != ''">
+            asset = #{asset},
+        </if>
+        <if test="manager != null and manager != ''">
+            manager = #{manager},
+        </if>
+        <if test="status != null and status != ''">
+            status = #{status},
+        </if>
+        <if test="isDeleted != null and isDeleted != ''">
+            is_deleted = #{isDeleted},
+        </if>
+        updated_time = now()
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM fund WHERE id =#{id}
+    </delete>
+
+    <insert id="batchInsert" parameterType="list">
+        insert into user(username, password, password2, password3, password4, password5, password6,
+        password7, password8, password9, password10)
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.username}, #{item.password}, #{item.password2}, #{item.password3},
+            #{item.password4}, #{item.password5}, #{item.password6}, #{item.password7},
+            #{item.password8}, #{item.password9}, #{item.password10})
+        </foreach>
+    </insert>
+
+    <insert id="batchUpdate" parameterType="list">
+        update user
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="username=case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.username}
+                </foreach>
+            </trim>
+            <trim prefix="password=case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.password}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach collection="list" item="item" index="index" separator="," open="(" close=")">
+            #{item.id}
+        </foreach>
+    </insert>
+
+    <select id="selectByCodeAndType" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from fund
+        where code = #{code}
+        and type = #{type}
+    </select>
+
+    <select id="selectByType" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from fund
+        where type = #{type}
+        and status = 1
+        and is_deleted = 0
+        order by ${orderBy} + 0 desc
+    </select>
+
+    <select id="selectFundTypeList" resultType="int">
+        SELECT
+            rank
+        FROM
+            fund
+        WHERE
+            STATUS = 1
+        AND is_deleted = 0
+        GROUP BY
+            rank
+    </select>
+
+    <select id="selectByNameOrCode" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from fund
+        where code = #{nameOrCode}
+        or name like concat('%', #{nameOrCode}, '%')
+        and status = 1
+        and is_deleted = 0
+        order by created_time desc
+        limit 100
+    </select>
+
+</mapper>
