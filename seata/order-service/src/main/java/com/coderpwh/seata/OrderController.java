@@ -24,6 +24,7 @@ import java.util.Random;
 /**
  * @author coderpwh
  */
+@RestController
 public class OrderController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderController.class);
