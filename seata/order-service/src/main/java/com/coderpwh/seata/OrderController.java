@@ -116,8 +116,13 @@ public class OrderController {
         HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(
                 map, headers);
 
-        ResponseEntity<String> response = restTemplate.postForEntity(url, request,
-                String.class);
+        try {
+            ResponseEntity<String> response = restTemplate.postForEntity(url, request,
+                    String.class);
+            System.out.println(response);
+        } catch (Exception exx) {
+            throw new RuntimeException();
+        }
     }
 
 
