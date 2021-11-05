@@ -1,3 +1,4 @@
+/*
 package com.github.lly835.controller;
 
 import org.springframework.stereotype.Controller;
@@ -13,3 +14,4 @@ public class IndexController {
 		return new ModelAndView("index");
 	}
 }
+*/

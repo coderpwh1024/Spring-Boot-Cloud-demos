@@ -1,10 +1,10 @@
 wechat:
-  mpAppId:   
-  mpsecret:  
-  mchId: 
-  mchKey:  
-  keyPath:  
-  notifyUrl:  
+  mpAppId: wx8f352712ffa643af
+  mpsecret: 77314864f9f1233fead3b0aa516fb7b3
+  mchId: 1597573561
+  mchKey: eMDHr7Kr2zmYmAnyevYfqYTLbEmqTibr
+  keyPath: /home/cert/apiclient_cert.p12
+  notifyUrl: http://www.huanglvming.cn/api/notify
   miniAppId: wxxxxxxxxxxx6bf9b
   miniAppSecret: xxbc6xxxxxxxxxxxxxx9c49d
   appAppId: wxxxxxxxxxxxx43b0
@@ -17,19 +17,26 @@ alipay:
   returnUrl: http://xxx.com/return
   sandbox: true #是否使用沙箱
 
+bank:
+  corpNo:876257
+  DES:cmbtest1
+  SM4:cmbtest1cmbtest1
+
+
 
 
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url:  
-    username:  
-    password: 
+    url: jdbc:mysql://1.12.241.231:3306/zhanshang?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 124456AaBbCc+-*/
 
   redis:
-    host:  
-    port: 
-    password:  
+    host: 1.12.241.231
+    port: 6379
+    password: 123456
+    jedis:
       pool:
         max-active: 8
         max-wait: -1

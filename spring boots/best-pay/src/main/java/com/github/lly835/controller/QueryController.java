@@ -1,3 +1,4 @@
+/*
 package com.github.lly835.controller;
 
 import com.lly835.bestpay.enums.BestPayPlatformEnum;
@@ -10,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+*/
 /**
  * 查询
  * Created by coderpwh
- */
+ *//*
+
 @RestController
 @RequestMapping("/query")
 public class QueryController {
@@ -32,3 +35,4 @@ public class QueryController {
 		return bestPayService.query(request);
 	}
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.github.lly835.controller;
 
 import com.github.lly835.config.WechatAccountConfig;
@@ -25,12 +26,14 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Random;
 
+*/
 /**
  * 支付相关
  *
  * @auther coderpwh
  * @since 1.0
- */
+ *//*
+
 @Controller
 @Slf4j
 @Api(value = "支付相关接口", tags = "支付相关接口")
@@ -46,9 +49,11 @@ public class PayController {
     @Autowired
     private WxUserService wxUserService;
 
-    /**
+    */
+/**
      * 发起支付
-     */
+     *//*
+
 
 
     @PostMapping(value = "/api/pay")
@@ -109,13 +114,15 @@ public class PayController {
     }
 
 
-    /**
+    */
+/**
      * 微信h5支付，要求referer是白名单的地址，这里做个重定向
      *
      * @param prepayId
      * @param packAge
      * @return
-     */
+     *//*
+
     @GetMapping("/wxpay_mweb_redirect")
     public ModelAndView wxpayMweb(@RequestParam("prepay_id") String prepayId,
                                   @RequestParam("package") String packAge,
@@ -147,12 +154,14 @@ public class PayController {
         return response;
     }
 
-    /**
+    */
+/**
      * 小程序支付
      *
      * @param code
      * @return
-     */
+     *//*
+
     @GetMapping(value = "/mini_pay")
     @ResponseBody
     public PayResponse minipay(@RequestParam(value = "code") String code) {
@@ -175,9 +184,11 @@ public class PayController {
         return payResponse;
     }
 
-    /**
+    */
+/**
      * 发起支付
-     */
+     *//*
+
     @GetMapping(value = "/alipay/pay")
     public ModelAndView aliPay(Map<String, Object> map) {
         PayRequest request = new PayRequest();
@@ -195,9 +206,11 @@ public class PayController {
         return new ModelAndView("pay/alipayPc", map);
     }
 
-    /**
+    */
+/**
      * 异步回调
-     */
+     *//*
+
     @PostMapping(value = "/api/notify")
     @ApiOperation(value = "异步回调", notes = "异步回调")
     public ModelAndView notify(@RequestBody String notifyData) {
@@ -235,3 +248,4 @@ public class PayController {
     }
 
 }
+*/

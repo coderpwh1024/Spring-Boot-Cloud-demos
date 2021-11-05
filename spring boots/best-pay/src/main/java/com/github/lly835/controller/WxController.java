@@ -1,3 +1,4 @@
+/*
 package com.github.lly835.controller;
 
 import com.alibaba.fastjson.JSONObject;
@@ -174,8 +175,10 @@ public class WxController {
         ValueOperations valueOperations = redisTemplate.opsForValue();
         String ticket = (String) valueOperations.get(appid);
         if (StringUtil.isEmpty(ticket)) {
-          /*  String url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + getWXaccessToken(appid,secret) + "&type=jsapi";
-            String resp = sender.getForObject(url, String.class);*/
+          */
+/*  String url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=" + getWXaccessToken(appid,secret) + "&type=jsapi";
+            String resp = sender.getForObject(url, String.class);*//*
+
 
 
             JSONObject paramJsonObject = new JSONObject();
@@ -194,21 +197,25 @@ public class WxController {
     private String getWXaccessToken(String appid, String secret) {
        String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" + appid + "&secret=" + secret;
         String resp =sender.getForObject(url, String.class);
-     /*   JSONObject paramJsonObject = new JSONObject();
+     */
+/*   JSONObject paramJsonObject = new JSONObject();
         paramJsonObject.put("access_token", access_token);
         paramJsonObject.put("openid", openid);
         paramJsonObject.put("lang", "zh_CN");
 
-        String ret = HttpURLConnectionUtil.doGet(WxUrlConstant.wx_user, paramJsonObject);*/
+        String ret = HttpURLConnectionUtil.doGet(WxUrlConstant.wx_user, paramJsonObject);*//*
 
 
+
+*/
 /*      JSONObject paramJsonObject = new JSONObject();
         paramJsonObject.put("grant_type", "client_credential");
         paramJsonObject.put("appid", appid);
         paramJsonObject.put("secret", secret);
 
 
-        String resp = HttpURLConnectionUtil.doGet(WxUrlConstant.token, paramJsonObject);*/
+        String resp = HttpURLConnectionUtil.doGet(WxUrlConstant.token, paramJsonObject);*//*
+
 
         JSONObject resJson = JSONObject.parseObject(resp);
         return resJson.getString("access_token");
@@ -216,3 +223,4 @@ public class WxController {
 
 
 }
+*/

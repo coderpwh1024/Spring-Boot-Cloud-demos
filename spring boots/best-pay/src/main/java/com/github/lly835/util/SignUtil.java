@@ -31,6 +31,9 @@ public class SignUtil {
         return UUID.randomUUID().toString();
     }
 
+    public static String getUUID32(){
+        return UUID.randomUUID().toString().replace("-", "").toLowerCase();
+    }
     /**
      * 生成timestamp
      */

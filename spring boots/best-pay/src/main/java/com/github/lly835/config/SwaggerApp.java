@@ -31,13 +31,13 @@ public class SwaggerApp {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 //页面标题
-                .title("Spring Boot 使用 Swagger2 构建RESTful API")
+                .title("小程序开发api")
                 //创建人
-                .contact(new Contact("微信公众号", "https://coderpwh.com/", ""))
+                .contact(new Contact("小程序", "https://coderpwh.net/", ""))
                 //版本号
                 .version("1.0")
                 //描述
-                .description("API 描述")
+                .description("api介绍")
                 .build();
     }
 
