@@ -59,4 +59,28 @@ public class Demo01ProducerTest {
     }
 
 
+    @Test
+    public void testSend() throws InterruptedException {
+        int id = (int) (System.currentTimeMillis() / 1000);
+
+        producer.send(id).addCallback(new ListenableFutureCallback<SendResult<Object, Object>>() {
+            @Override
+            public void onFailure(Throwable e) {
+                logger.info("[testASyncSend][发送编号:[{}] 发送异常]", id, e);
+            }
+
+            @Override
+            public void onSuccess(SendResult<Object, Object> result) {
+//                logger.info("[testASyncSend][发送编号:[{}] 发送成功,结果为:[{}]]", id, result);
+                logger.info("[testSned][发送编号:[{}]]，发送成功，对应的topic为:[{}],分区为:[{}],分区偏移量为:[{}]",id,result.getRecordMetadata().topic(),
+                        result.getRecordMetadata().partition(),result.getRecordMetadata().offset());
+
+            }
+        });
+
+        // 阻塞等待，保证消费
+        new CountDownLatch(1).await();
+    }
+
+
 }
